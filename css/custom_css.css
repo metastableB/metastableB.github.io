@@ -22,18 +22,16 @@
  }
 
 
-.row-center{
+.header-position{
 	position:relative;
 	top:80%;
 	left:0%;
 }
-html{
+/*
+ * children elements ignore min-height when calculating
+ * their own height, and hence absolute values are required here.
+ http://www.456bereastreet.com/archive/201306/height_in_percent_when_parent_has_min-height_and_no_height/
+ */
+html, body{
   height: 100%;
-  overflow: visible;
-}
-body {
-  height: 100%;
-}
-.vcenter {
-   
 }

@@ -40,8 +40,8 @@
 				<ul class="nav navbar-nav navbar-right">
 				<!-- something like the default active element-->
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#Projects">Projects</a></li>
 					<li><a href="#About">About</a></li>
+					<li><a href="#Projects">Projects</a></li>
 					<li><a href="#Contact">Contact</a></li>
 					<li><a href="#Blog">Blog</a></li>
 				</ul>
@@ -50,14 +50,14 @@
 	</nav>
 
 	<!-- Header -->
-	<div class="container-bg">				
-		<div class="row-center text-center">
+	<div class="container-bg" id="Home">				
+		<div class="header-position text-center">
 			This is content
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="row">
+		<div id = "About" class="row">
 			<div class="col-md-12 text-center" style="padding:10px;">
 				This is a 12 word column. Height expands as content increases.
 			</div>
@@ -71,3 +71,11 @@
     <script src="./css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+<!--
+	TODO:
+		[ ] Fix the weird drop down auto align behavior.
+			Reproduction: Just pull the drop down menu down,
+				using a regular click on a smaller screen.
+		[ ] Add a better transition to the navbar button
+		[ ] Add a better transition between sections of the page
+		[ ] Indicate the correct 'active' section
