@@ -1,0 +1,4 @@
+Position Absolute : Positions the element absolute to the nearest relatively
+        positioned element or the viewport, which ever occurs first.
+If a position element is not given , the elements position themselves to the
+    nearest positioned element.
