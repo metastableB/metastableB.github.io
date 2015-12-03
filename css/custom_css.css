@@ -62,9 +62,22 @@
 
 .header-position{
 	position:relative;
-	top:80%;
+	top:70%;
 	left:0%;
 	width:100%;
+}
+
+.header-text {
+	color:#137700;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.header-subtext {
+	color:#137700;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 1em;
 }
 
 .about {
@@ -73,6 +86,14 @@
 	padding-top: 10%;
 	padding-bottom:10%;	
 }
+.about-head {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 3em;
+}
+.about-text {
+	font-weight: bold;
+}
 
 .work{
 	padding-left: 10%;
@@ -80,12 +101,29 @@
 	padding-top: 10%;
 	padding-bottom:10%;
 }
+.work-head {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 3em;
+}
+.work-text {
+	font-weight: bold;
+}
+
 
 .blog {
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 10%;
 	padding-bottom:10%;
+}
+.blog-head {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 3em;
+}
+.blog-text {
+	font-weight: bold;
 }
 
 .contact {
@@ -94,9 +132,29 @@
 	padding-top: 10%;
 	padding-bottom:10%;
 }
+.contact-head {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 3em;
+}
+.contact-text {
+	font-weight: bold;
+}
 
 /* em is basically twice the height of a font char */
 .footer {
 	padding:1%;
 	min-height:2em;
+}
+
+.code-like {
+    padding: 2px 4px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    font-size: 90%;
+    color: #55FF43;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 4px;
 }
