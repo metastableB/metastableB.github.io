@@ -12,7 +12,7 @@
 		 that is created in the mobile version for the option drop down
 	-->
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
 	<!--
 	Navbar header seems to be the portion of the navbar that always seems to be present.
@@ -41,25 +41,55 @@
 				<!-- something like the default active element-->
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#About">About</a></li>
-					<li><a href="#Projects">Projects</a></li>
-					<li><a href="#Contact">Contact</a></li>
+					<li><a href="#Work">Work</a></li>
 					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</dev>
 		</dev>
 	</nav>
 
 	<!-- Header -->
-	<div class="container-bg" id="Home">				
+	<div class="container-bg container-fluid" id="Home">				
 		<div class="header-position text-center">
 			This is content
 		</div>
 	</div>
 
-	<div class="container">
-		<div id = "About" class="row">
-			<div class="col-md-12 text-center" style="padding:10px;">
-				This is a 12 word column. Height expands as content increases.
+	<!-- other content-->
+	<div class="container-fluid">
+		<div class="about row text-center scheme-1" id = "About">
+				This is me populating my super alpha version of the website with some super alpha version content. I was never a fan of web development though, things have started to change.
+
+				I'm currently a little short on time, and have a lot of things to finish this December. I'll fill everything up here eventually.
+				
+				Thanks for checking in!
+		</div>
+		<div class="work row text-center scheme-2" id="Work">
+			This is the work section.
+			Here goes my awesome projects and a lot of not so awesome projects. By the end of this month, I expect to finish with a DJANGO project and a small TCP/IP server and some JS. No, not academic requirements. I just love to fiddle with new things :D (never have been great with academic stuffs anyway!)
+		</div>
+		<div class="blog row text-center scheme-1" id="Blog">
+			Ah, a collection of things I'v written and things I'v failed to write. (Ok that didn't make much sense did it ?).
+			<br> 
+			The plan here is to give a preview of my blog articles. I don't expect people to read it (just yet ;)). But I'll get to learn some dynamic content preview generation 
+			after I get into DJANGO and get a chance to implement it here.
+			<br>
+			GitHutb (where I'm hosting) already has some kind of a platform for blogs, will check that out as well.
+		</div>
+		<div class="contact row text-center scheme-2" id="Contact">
+			Seriously, I love this emmet thing. Its beautiful. And sublime as well. Man talk about powertools.
+
+			<br>Anyway, contact right ?
+			<br>Quite obiously I'm metastableB on github.
+			<br>don.k.dennis [the obvious non alphanumeric at sign]gmail.com { note to spammers : I'll hunt you down and gut you like a fish. Cheers :) } 
+		</div>
+		<div class="footer row scheme-footer">
+			<div class="col-xs-6 text-left">
+				This is left part of footer.
+			</div>
+			<div class="col-xs-6 text-right">
+				This is right aligned part.
 			</div>
 		</div>
 	</div>

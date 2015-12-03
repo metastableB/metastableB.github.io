@@ -2,3 +2,9 @@ Position Absolute : Positions the element absolute to the nearest relatively
         positioned element or the viewport, which ever occurs first.
 If a position element is not given , the elements position themselves to the
     nearest positioned element.
+
+    /*
+ * children elements ignore min-height when calculating
+ * their own height, and hence absolute values are required here.
+ http://www.456bereastreet.com/archive/201306/height_in_percent_when_parent_has_min-height_and_no_height/
+ */
