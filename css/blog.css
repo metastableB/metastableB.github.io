@@ -1,13 +1,29 @@
 
-.post-list-extended {
+.post-list-container {
 	height:100%;
 	width:100%;
-	position:relative;
-	padding-top:15%;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-top:70px;
 }
+.post-list {
+	min-height:100%;
+	min-width:100%;
+	padding: 15%;
+}
+.post-list-entry{
+	padding: 1%;
+    background-color: rgba(212,228,185,1);
+    border-radius: 4px;
+    margin-bottom:7px;
+    box-shadow: 10px 5px 10px #888888;
 
+}
+.post-list-meta {
+	color: rgba(67,103,128,1);
+	padding:0;
+}
+.post-list-link {
+	color : rgba(35,138,137,1);
+}
 .post-content {
 	padding:70px;
 	min-height:100%;
@@ -21,8 +37,8 @@
 .post-custom-container {
 	padding:70px;
 }
-.post-footer {
-	position:absolute;
+.post-footer-small {
+	position:fixed;
 	bottom:0%;
 	left:0%;
 	right:0%;

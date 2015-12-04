@@ -2,14 +2,17 @@
 layout : blog_home
 ---
 <!-- TODO : remove post-list class as its a jekyll class. use post-list-extended instead-->
-<ul class="post-list post-list-extended scheme-2">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-</ul>
+<div class="post-list-container scheme-2">
+	<div class="container post-list">
+	    {% for post in site.posts %}
+	    <div class="row post-list-entry">
+	        <div class="col-md-6 text-left post-list-meta">{{ post.date | date: "%b %-d, %Y" }}
+	        </div>
+	        <div class="col-md-6 text-right post-list-meta">{{ post.author }}</div>	
+	        <h2>
+	          <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h2>
+	    </div>  
+		    {% endfor %}
+	</div>
+</div>
