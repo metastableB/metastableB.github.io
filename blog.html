@@ -6,9 +6,7 @@ layout : blog_home
 	<div class="container post-list">
 	    {% for post in site.posts %}
 	    <div class="row post-list-entry">
-	        <div class="col-md-6 text-left post-list-meta">{{ post.date | date: "%b %-d, %Y" }}
-	        </div>
-	        <div class="col-md-6 text-right post-list-meta">{{ post.author }}</div>	
+	        <div class="col-md-12 text-right post-list-meta">{{ post.date | date: "%b %-d, %Y" }}</div>	
 	        <h2>
 	          <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	        </h2>
