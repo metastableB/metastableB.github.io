@@ -24,3 +24,15 @@ WHY CANT WEB DEVELOPMENT BE SIMPLER!
 Okay, this is just me going through the initial steep learning phase. Even still the lack of a seemingly clear and modular structure of development, supported across different browsers is frustrating. It goes to show how complex the web browser structure is! I guess all device responsive development is some what like Microsoft, just trying to figure out one way or the other to make your products work.
 
 Anyway, for now I've resorted to use a `position: fixed;` footer for smaller content as a work around. Not elegant. Not elegant at all.
+
+[Update] 05 December 2015 (Saturday) 02:35
+I'm thinking of creating a private ideas dump/brain dump/ thoughts dump kind of thing for my page. Then I'm going to open source it.
+
+Yeah yeah I know, I know, twitter already does that right ?
+But twitter is not personal, its your thoughts for the world. For someone like me who has a lot of thinks filled in his mind he wants to flush out this would be perfect.
+
+I mean you wont have the pressure of number of retweets or number of likes or number of comments but you still get a medium to write something.
+
+NOTE TO SELF : allow for comments, but hide them until asked for.
+
+Not the line separating a blog and such a brain dump is blurry to say the least. I guess Blogs are for thought out detailed description of ideas, opinion or even experience with a specific flavor or bias towards a subject while this dump will be a spontaneous act of creation ? 
