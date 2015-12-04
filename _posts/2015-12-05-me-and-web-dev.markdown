@@ -1,9 +1,11 @@
 ---
 layout: post
+key: a1
 title:  "Me and WebDev! : Part 1"
 date:   2015-12-04 05:33:41 +0530
 categories: rant brain-dump
 author: Don Dennis
+header-img: /img/snake_charmer_original.jpg
 ---
 
 I have never been a fan of web development, especially front-end work. I've done very little web development in the past and the very little work I have done was just applying basic formatting and editing on available content.
