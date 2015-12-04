@@ -33,10 +33,7 @@
 .scheme-2{
 	background-color: rgba(231,231,231,1);
 }
-.scheme-footer{
-	color: rgba(255, 255, 185, 1);
-	background-color: rgba(0,0,0,1);
-}
+
 
 /* Element specific CSS */
 
@@ -143,10 +140,25 @@
 
 /* em is basically twice the height of a font char */
 .footer {
-	padding:1%;
+	padding-top:1%;
+	padding-bottom: 0.5%;
 	min-height:2em;
+	color: rgba(119, 119, 119,1);
+	background-color: #f8f8f8;
+}
+.footer-subheading{
+	font-weight: lighter;
+	font-size: xx-small;
 }
 
+.footer-sugar {
+	font-size: 90%;
+    color: rgba(3, 129, 183,1);
+    padding-left: 2px;
+    padding-right:2px;
+    background-color: rgba(255, 205, 205,0.3);
+    border-radius: 4px;
+}
 .code-like {
     padding: 2px 4px;
     padding-top: 2px;
