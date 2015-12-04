@@ -1,0 +1,29 @@
+
+.post-list-extended {
+	height:100%;
+	width:100%;
+	position:relative;
+	padding-top:15%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.post-content {
+	padding:70px;
+	min-height:100%;
+	position:absolute;
+	left:0%;
+	right:0%;
+	
+}
+
+/* used to position the header and footer correctly */
+.post-custom-container {
+	padding:70px;
+}
+.post-footer {
+	position:absolute;
+	bottom:0%;
+	left:0%;
+	right:0%;
+}
