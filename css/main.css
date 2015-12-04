@@ -51,8 +51,6 @@
  	/* set imgae */
  	background-image: url(../img/snake_charmer_original.jpg);
  	background-position: center;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
  	background-size: cover;
  	-o-background-size: cover;
  }
