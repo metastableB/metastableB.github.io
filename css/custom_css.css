@@ -158,3 +158,21 @@
     background-color: rgba(0, 0, 0, 0.58);
     border-radius: 4px;
 }
+
+.post-list-extended {
+	height:100%;
+	width:100%;
+	position:relative;
+	padding-top:15%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.post-extended {
+	height:100%;
+	width:100%;
+	position:relative;
+	padding-top:15%;
+	padding-left: 10%;
+	padding-right: 10%;	
+}

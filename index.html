@@ -1,54 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Don Dennis</title>
-	<link href="./css/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="./css/custom_css.css" rel="stylesheet" media="screen">
-</head>
-<body>
-	<!-- The navbar class is used for the navigation bar on top. It is responsive and collapses 
-		 as necessary.
-		 The nav bar header , well defines the header and the button we define is the button 
-		 that is created in the mobile version for the option drop down
-	-->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-	<!--
-	Navbar header seems to be the portion of the navbar that always seems to be present.
-
-	the bootstrap collapse class indicates collapsible elements, which can collapse expand on click.
-	To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).
-
-	Note: For <a> elements, you can use the href attribute instead of the data-target attribute
-
-	aria-expanded controls the state of the items (like being collapsed)
-	-->
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-			    <!-- sr-only : screen reader only -->
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			    </button>
-			      <a class="navbar-brand" href="#">metastableB</a>
-			</div>
-			<dev id="navbar-items" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-				<!-- something like the default active element-->
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Work">Work</a></li>
-					<li><a href="#Blog">Blog</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</dev>
-		</dev>
-	</nav>
-
+---
+layout : home
+---
 	<!-- Header -->
 	<div class="container-bg container-fluid" id="Home">
 		<div class="row header-position">
@@ -106,6 +58,7 @@
 				after I get into DJANGO and get a chance to implement it here.</p>
 				<p>
 				GitHutb (where I'm hosting) already has some kind of a platform for blogs, will check that out as well.</p>
+				<a href="/blog" >blog</a>
 			</div>
 		</div>
 		<div class="contact row text-center scheme-2" id="Contact">
@@ -120,23 +73,6 @@
 				</p>
 			</div>
 		</div>
-		<div class="footer row scheme-footer">
-			<div class="col-xs-6 text-left">
-				This is left part of footer.
-			</div>
-			<div class="col-xs-6 text-right">
-				This is right aligned part.
-			</div>
-		</div>
-	</div>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery is required for bootstrap.js to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-</body>
-</html>
 <!--
 	TODO:
 		[ ] Fix the weird drop down auto align behavior.
@@ -144,4 +80,8 @@
 				using a regular click on a smaller screen.
 		[ ] Add a better transition to the navbar button
 		[ ] Add a better transition between sections of the page
-		[ ] Indicate the correct 'active' section
+		[ ] Indicate the correct 'active' section 
+		[ ] Jekylls _include/header.html has the code to using
+			SVN for github and others, use it
+		[ ] Use the _layout/post.html to better layout your posts
+		[ ] Fix footer alignment issues-->
