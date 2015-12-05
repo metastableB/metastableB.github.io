@@ -44,8 +44,6 @@
 .image-bg-fluid-height,
 .image-bg-fixed-height {
     text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
