@@ -8,6 +8,7 @@
 	min-height:100%;
 	min-width:100%;
 	padding: 15%;
+	background-color: rgba(231,231,231,1);
 }
 .post-list-entry{
 	padding: 1%;
