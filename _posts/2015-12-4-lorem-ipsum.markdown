@@ -2,7 +2,7 @@
 layout: post
 title: Lorel Ipsum
 date: 05 December 2015 (Saturday)
-categories: rant brain-dump
+categories:
 author: Don Dennis
 ---
 
