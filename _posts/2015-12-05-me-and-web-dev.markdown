@@ -3,7 +3,7 @@ layout: post
 key: a1
 title:  "Me and WebDev! : Part 1"
 date:   2015-12-04 05:33:41 +0530
-categories: rant brain-dump
+categories:
 author: Don Dennis
 header-img: /img/snake_charmer_original.jpg
 ---
@@ -28,6 +28,7 @@ Okay, this is just me going through the initial steep learning phase. Even still
 Anyway, for now I've resorted to use a `position: fixed;` footer for smaller content as a work around. Not elegant. Not elegant at all.
 
 [Update] 05 December 2015 (Saturday) 02:35
+
 I'm thinking of creating a private ideas dump/brain dump/ thoughts dump kind of thing for my page. Then I'm going to open source it.
 
 Yeah yeah I know, I know, twitter already does that right ?
