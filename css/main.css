@@ -122,8 +122,8 @@
 .work{
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 10%;
-	padding-bottom:10%;
+	padding-top: 5%;
+	padding-bottom:5%;
 }
 .work-head {
 	font-weight: bold;
@@ -141,7 +141,7 @@
 }
 @media screen and (min-width: 992px){
 	.work-img-card{
-		max-width: 30%;
+		max-width: 32%;
 		margin:0.5%;
 	}
 }
