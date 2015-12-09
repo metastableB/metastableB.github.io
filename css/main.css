@@ -127,7 +127,10 @@
 }
 .blog-head {
 	font-weight: bold;
-	color:#333;
+	-webkit-column-rule: #333;
+	-moz-column-rule: #333;
+	-o-column-rule: #333;
+	column-rule: #333;
 	font-size: 3em;
 }
 .blog-text {
