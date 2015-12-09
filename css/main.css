@@ -181,3 +181,21 @@
     background-color: rgba(0, 0, 0, 0.58);
     border-radius: 4px;
 }
+
+
+.coffee-cup-container{
+	min-height: 100%;
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.coffee-cup{
+	max-width:75%;
+}
+@media only screen and (max-width: 992px) {
+    .coffee-cup {
+    	max-width:20%;
+    }
+    .coffee-cup-container{
+    	padding:0.1%;
+    }
+}
