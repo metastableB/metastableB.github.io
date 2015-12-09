@@ -83,10 +83,23 @@
 }
 .about-head {
 	font-weight: bold;
-	text-decoration: underline;
 	font-size: 3em;
 }
 .about-text {
+	font-weight: bold;
+}
+
+.interests{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom:10%;
+}
+.interests-head {
+	font-weight: bold;
+	font-size: 3em;
+}
+.interests-text {
 	font-weight: bold;
 }
 
@@ -114,7 +127,7 @@
 }
 .blog-head {
 	font-weight: bold;
-	text-decoration: underline;
+	color:#333;
 	font-size: 3em;
 }
 .blog-text {

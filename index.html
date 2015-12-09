@@ -4,40 +4,62 @@ layout : home
 	<!-- Header -->
 	<div class="container-bg container-fluid" id="Home">
 		<div class="row header-position">
-			<div class="row">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-6 header-text text-center">
-					Hello, I'm Don.<br>
-					This is a little about me.
-				</div>
-				<div class="col-xs-3"></div>
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6 header-text text-center">
+				Hello, I'm Don.<br>
+				This is a little about me.
+
+				<div style="color:black;font-size:0.5em;"> I'm currently just building this page. Forgive me for the poor layout :D</div>
 			</div>
-			<div class="row header-subtext text-center">
-				<!-- should I add a fancy subtext -->
-			</div>
+			<div class="col-xs-3"></div>
+		</div>
+		<div class="row header-subtext text-center">
+			<!-- should I add a fancy subtext -->
 		</div>
 	</div>
 
 	<!-- other content-->
 	<div class="container-fluid">
-		<div class="about row scheme-1" id = "About">
-				<div class="about-head text-center ">
-					About
+		<div class="row about scheme-1" id = "About">
+			<div class="col-md-6">
+				<img src="/img/dp.jpg" alt="My portrait." class="img-responsive img-circle" style="max-width:50%;margin-left:auto;margin-right:auto;display:block;">
+  			</div>		
+			<div class="col-md-6 text-center">
+				<div class="row about-head text-center ">
+					Hello!
 				</div>
-				<div class="about-text text-center">
-				    <p>This is me populating my super alpha version of the website with some super alpha content. I was never a fan of web development, though things have started to change. The plan here is to develop a layout first, figure out more about HTML/CSS and the bootstrap framerwork and then get to content creation.</p>
-
-					<p>I'm currently a little short on time, and have a lot of things to finish this December - possible delays hence.</p>
-					
-					<p>Thanks for checking in!</p>
+				<div class="row about-text">
+					<p>Here you might find some information about my work, interests and opinions. I spent most of my early childhood in God's own country - Kerala. My time was dedicated to playing cricket with kits made of coconut tree leaves, fishing in the lakes nearby and climbing trees for guava fruits. Those were truly wonderful days!</p>
+					<p>Around the time I was 10, we moved to the majestic Delhi. Delhi was a totally different experience for me and exposed me to the best of the best in everything! I made a whole lot of great friends and great memories living here. I come home to Delhi whenever I get time!<p>
+					<p>Currently I'm pursuing my undergraduate studies at the Department of Computer Science and Engineering, IIT Patna.</p>
+					<p>I love hearing and discovering new music. Occasionally I write and also play the guitar.</p>
+					<p>I am a huge Pink Floyd Fan!.</p>
+					<br>
 				</div>
+			</div>
 		</div>
-		<div class="work row text-center scheme-2" id="Work">
+		<div class="interests row text-center scheme-2" id="Interests">
+			<div class="interests-head">
+				Interests
+			</div>
+			<div class="interests-text">
+				<p>I'm a coffee to code guy.
+				<br> I love my coffee and I love my code.
+				</p>
+				<p>I mainly work at the lower level of computing, near the hardware software interface. Operating systems, kernel programming and embedded systems are things I spend a lot of time on. Having said that, I've had experience working on scale as well, specifically Big Data and MapReduce. I love working on machine learning tasks and try to keep updated on the latest developments in the field. Recently, I've started to venture into web development as well. 
+				You can find a detailed description of the projects I have been a part on in the following section.
+				</p>
+				<p>I am always looking for new and interesting opportunities. If you have anything for me, feel free to shoot me an email.</p>
+
+			</div>
+		</div>
+		<div class="work row text-center scheme-1" id="Work">
 			<div class="work-head">
 				Work
 			</div>
 			<div class="work-text">
 				<p>
+				competitive
 				This is the work section.
 				Here goes some of my awesome projects and some not so awesome projects. I'll add my previous stuff here soon, both major and minor. I also plan to add links to content I'm working on and blog entries regarding them here as well.
 				</p>
@@ -47,31 +69,29 @@ layout : home
 				
 			</div>
 		</div>
-		<div class="blog row text-center scheme-1" id="Blog">
+		<div class="blog row text-center scheme-2" id="Blog">
 			<a href="/blog" class="blog-head">Blog</a>
 			<div class="blog-text">
-				<p>Ah, a collection of things I'v written and things I'v failed to write. (Ok that didn't make much sense did it ?).
+				<p>Ah, a collection of things I have written and things I have failed to write.
+				<br>That did not make much sense did it? Oh well.
+				<br>You can find my blog <a href="/blog" >here</a>. I try to keep it updated on a monthly basis.
 				</p>
-				<p> 
-				The plan here is to give a preview of my blog articles. I don't expect people to read it (just yet ;)). But I'll get to learn some dynamic content preview generation 
-				after I get into DJANGO and get a chance to implement it here.</p>
-				<p>
-				GitHutb (where I'm hosting) already has some kind of a platform for blogs, will check that out as well.</p>
 				
 			</div>
 		</div>
-		<div class="contact row text-center scheme-2" id="Contact">
+		<div class="contact row text-center scheme-1" id="Contact">
 			<div class="contact-head">
 				Contact
 			</div>
 			<div class="contact-text">
-				<p>Seriously, I love this <span class="code-like">sublime</span> thing, it's beautiful. Man talk about powertools.</p>
-				<p>Anyway, contact right ?
-				<br>Quite obviously I'm <span class = "code-like">metastableB</span> on github and you can find some of my code samples over there.
-				<br>I'd love to hear anything you have to say. Shoot me an email at<br> <span class="code-like">don.k.dennis[at]gmail.com </span><br><i>[ note to spammers : I'll hunt you down and gut you like a fish. Cheers :) ] </i><br>I regularly hangout on <b>IRC</b>, mostly with the handle <span class="code-like">metastableB</span> or <span class="code-like">metastableb</span>.
+				<p>I'm <span class = "code-like">metastableB</span> on github and you can find some of my code samples over there.</p>(todo: add gihub image here)
+				<p>I'd love to hear anything you have to say. Shoot me an email at <span class="code-like">don.k.dennis[at]gmail.com </span><i><br>[ note to spammers : I'll hunt you down and gut you like a fish. Cheers :) ] </i>
+				</p>
+				<p>I regularly hangout on <b>IRC</b>, mostly with the handle <span class="code-like">metastableB</span> or <span class="code-like">metastableb</span>.
 				</p>
 			</div>
 		</div>
+	</div>
 <!--
 	TODO:
 		[ ] Fix the weird drop down auto align behavior.
