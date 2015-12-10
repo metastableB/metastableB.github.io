@@ -60,10 +60,14 @@
  }
 
 .header-position{
-	position:relative;
-	top:70%;
-	left:0%;
-	width:100%;
+	position:absolute;
+	bottom:0;
+	left:10%;
+	right:10%;
+	width:80%;
+	padding-bottom:70px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .header-text {
