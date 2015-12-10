@@ -251,7 +251,7 @@
 	padding-bottom: 0.5%;
 	min-height:2em;
 	color: #FFFFFF;
-	background-color: #A29B84;
+	background-color: #777777;
 	border-radius: 2px;
 }
 .footer-subheading{
@@ -264,7 +264,7 @@
     color: rgb(8, 0, 255);
     padding-left: 2px;
     padding-right:2px;
-    background-color: rgba(255, 205, 205,0.3);
+    background-color: rgba(63, 255, 40, 0.3);
     border-radius: 4px;
 }
 .code-like {
