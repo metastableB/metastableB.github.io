@@ -82,8 +82,8 @@
 .about {
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 10%;
-	padding-bottom:10%;	
+	padding-top: 5%;
+	padding-bottom:4%;	
 }
 .about-head {
 	font-weight: bold;
@@ -93,6 +93,22 @@
 	font-weight: bold;
 }
 
+.about-img{
+	width:273px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 80px;
+	margin-bottom: auto;
+	display:block;
+	box-shadow:3px 3px 3px #888888;
+}
+
+@media screen and (max-width: 992px){
+	.about-img{
+		margin-top:0px;
+		margin-bottom:10px;
+	}
+}
 .interests{
 	padding-left: 10%;
 	padding-right: 10%;
