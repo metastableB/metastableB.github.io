@@ -203,6 +203,7 @@
 	-moz-column-rule: #333;
 	-o-column-rule: #333;
 	column-rule: #333;
+	color:rgb(51,51,51);
 	font-size: 3em;
 }
 .blog-text {
@@ -212,16 +213,20 @@
 .contact {
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 10%;
-	padding-bottom:10%;
+	padding-top: 5%;
+	padding-bottom:3%;
 }
 .contact-head {
 	font-weight: bold;
-	text-decoration: underline;
 	font-size: 3em;
 }
 .contact-text {
 	font-weight: bold;
+}
+
+.contact-img {
+	width:40px;
+	margin-bottom:20px;
 }
 
 /* em is basically twice the height of a font char */
