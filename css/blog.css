@@ -1,22 +1,16 @@
 
 .post-list-container {
-	height:100%;
-	width:100%;
+	background-color: rgba(255, 255, 185, 1);
 	padding-top:70px;
-}
-.post-list {
+	padding-bottom: 70px;
 	min-height:100%;
-	min-width:100%;
-	padding: 15%;
-	background-color: rgba(231,231,231,1);
 }
 .post-list-entry{
-	padding: 1%;
-    background-color: rgba(212,228,185,1);
+    background-color: rgb(168, 208, 102);
     border-radius: 4px;
-    margin-bottom:7px;
-    box-shadow: 10px 5px 10px #888888;
-
+    margin-bottom:3px;
+    box-shadow: 1.5px 3px 3px #888888;
+    padding:10px;
 }
 .post-list-meta {
 	color: rgba(67,103,128,1);
@@ -24,11 +18,15 @@
 }
 .post-list-link {
 	color : rgba(35,138,137,1);
+	font-size: 30px;
 }
-.post-custom-container {
-	padding:70px;
+.post-img{
+	width: 250px;
+	height:auto;
 }
+.post-discr{
 
+}
 .post-footer-small-content {
 	position:fixed;
 	bottom:0%;
