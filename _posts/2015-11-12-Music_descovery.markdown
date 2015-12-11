@@ -1,14 +1,12 @@
 ---
-layout: post
+layout: post_md
 key: a5
 title: Music Discovery  
 date:  2015-11-15 08:30 +0530 
 categories: projects
 author: Don Dennis
-header-img:
+header-img: /img/snake_charmer_original.jpg
 ---
-# Music Discovery
-
 **_tldr:_** *I am not really satisfied with existing music recommendation/discovery systems and hence try to find out more about the research being done in the area. I try and see if a system based on a purely taste and context based learning model is feasible. I read a bunch of papers and realize that a lot of work has been done in the field but in a scattered fashion. I try to explore if these works can be combined and improved and eventually stumble upon last.fm and pandora. Pandora and last.fm do most of the things I want in the software I have in mind but when both of them are considered together.*
 
 ___
@@ -26,11 +24,12 @@ The task at hand does seem to be something humans are good at. I mean take two p
 A lot of existing learning, classification, clustering, graph and FOF based models exist and YouTube suggestions is a good example. Though these are either not exactly specialized for discovering music, or depend way too much on attributes rather than song 'fingerprints'. Also, most of these don't take context into account.
 
 Other softwares I know of that includes some suggestion systems are 
-    + Mixxx - AutoDJ, **which I worked on.**
-    + Smart Play List and song Moods - Clementine
-    + iTunes DJ - iTunes
+    
+* Mixxx - AutoDJ, **which I worked on.**
+* Smart Play List and song Moods - Clementine
+* iTunes DJ - iTunes
 
-** GNOD: Global network of discovery**
+**GNOD: Global network of discovery**
 Does a brilliant job! They take inputs from you and finds songs/artists that you might like using a map based model they have build. 
 
 If this was integrated to some native Linux music app and used the users library as an input replacing an active user participation, it would have been much more convenient.
@@ -39,7 +38,7 @@ They don't take the actual music structure into consideration though, which is w
 
 [Here](https://www.quora.com/What-are-some-music-recommendation-websites/answer/Christoph-M%C3%B6ller) you can find a list of similar search and discovery sites which take some kind of user input and then works on it.
 
-** Last FM and Pandora**
+**Last FM and Pandora**
 [This](http://blog.stevekrause.org/2006/01/pandora-and-lastfm-nature-vs-nurture-in.html) blog gives excellent insights into what lastfm and Pandora does and I must say that those two together more or less does what I had in mind.
 
 At this point I guess I'm going to read more on them and use the technology to see its results before doing more work. 

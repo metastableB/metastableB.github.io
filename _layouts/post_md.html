@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+ 	<style>
+		.{{ page.key }}-post-img-source{
+			background: url( {% if page.header-img %} 
+								'{{ page.header-img }}'
+							{% else %} 
+							'{{ site.default-header-img }}' 
+							{% endif %}) no-repeat center center scroll;
+		}
+
+		{% if page.custom-css %} {{ page.custom-css }} {% endif %}
+		.music-disc {
+	        border: 1px solid #DCDCDC;
+		    /* outline: 1300px solid #fff; */
+		    margin: 16px auto;
+		    padding: 15px;
+		    background-color: #FFF
+		}
+	</style>
+
+  <body>
+    {% include navbar_blog.html %}
+	
+	
+	<article class="image-bg-fluid-height {{ page.key }}-post-img-source post-header-container" itemscope itemtype="http://schema.org/BlogPosting">
+	    <header class="post-header-shadow">
+		    <h1 class="post-header-h1">{{ page.title }}</h1>
+		    <p class="post-header-subtext"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+		</header>
+	</article>
+	
+	<article class="post-content-container scheme-2" itemscope itemtype="http://schema.org/BlogPosting">
+		<div itemprop="articleBody" class="text-justify post-content  music-disc">
+		   	{{ content }}
+		</div>  
+	</article>
+	
+    {% include footer.html %}
+  </body>
+</html>
+

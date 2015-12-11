@@ -100,3 +100,8 @@
 	padding-right: 15%;
 	}	
 }
+/* because bootstrap block quote sucks*/
+blockquote{
+    font-size: 12.5px;
+    border-left: 5px solid #BBBABA;
+    background-color: rgb(220, 220, 220);
