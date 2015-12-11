@@ -39,3 +39,9 @@ I mean you wont have the pressure of number of retweets or number of likes or nu
 NOTE TO SELF : allow for comments, but hide them until asked for.
 
 Not the line separating a blog and such a brain dump is blurry to say the least. I guess Blogs are for thought out detailed description of ideas, opinion or even experience with a specific flavor or bias towards a subject while this dump will be a spontaneous act of creation ? 
+
+[Update] 11 December 2015 (Friday) 08:17
+
+It has been about 5 days since I started out on this task of learning HTML CSS and some basic web development and it has been rewarding. I have finally been able to put up the front page of my website using a responsive design. Currently am in search of a better layout for my blog and once I have that I can say that 90% of my work is really complete. Now, we all know how difficult it is taking it from the 90% mark to the 99% mark right.
+
+Its going to be incremental work from now. I'll clean up these articles one by one, fix minor layout and JS issues, and some transitions and so forth. Other tasks in the TODO list is organizing articles in categories, making a site map for SEO and so forth.
