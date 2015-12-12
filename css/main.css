@@ -282,3 +282,19 @@
     background-color: rgba(0, 0, 0, 0.58);
     border-radius: 4px;
 }
+
+.wanderer-404-img{
+	background-image: url(../img/wanderer_404.jpg);
+}
+
+.header-404-position {
+	position: absolute;
+	top:100px;
+	left:0;
+	right:0;
+}
+
+.text-404{
+	font-weight:800;
+	color:#4A3C33;
+}
