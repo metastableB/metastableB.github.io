@@ -1,3 +1,8 @@
+---
+
+---
+
+
 body::before {
     background-size: cover;
     background-attachment: fixed;
@@ -226,6 +231,15 @@ body .demo-blog {
 .demo-blog .shopping .mdl-card__media {
   background-image: url('/img/mdl/shopping.jpg');
 }
+
+{%  for post in site.posts %}
+  {% if post.bg-class-name %}
+  .demo-blog .{{ post.bg-class-name }} .mdl-card__media {
+      background-image: url('{{ post.header-img }}');
+    }
+  {% endif %}
+{% endfor %}
+
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
   display: -webkit-flex;
@@ -505,3 +519,5 @@ body .demo-blog {
   text-decoration: none;
   color:rgba(0,0,0,.87);
 }
+
+

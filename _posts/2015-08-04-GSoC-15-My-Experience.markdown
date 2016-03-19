@@ -6,7 +6,7 @@ date:   2015-08-04  011:30:13 +0530
 categories: projects summer-intern
 author: Don Dennis
 header-img: /img/snake_charmer_original.jpg
-header-img-class : .header-img-class { background-img:}
+bg-class-name: gsoc_experience
 ---
 
 <h1>Coming Soon!</h1>
