@@ -523,3 +523,40 @@ body .demo-blog {
 }
 
 
+/*********************
+Fixing the markdown
+************************/
+em {
+  color: #A9A9A9;
+}
+h1 {
+  max-width:80%;
+}
+h2 {
+  text-align:left;
+}
+h4 {
+  max-width:80%;
+  text-align:left;
+}
+
+hr {
+  width:87%;
+}
+
+blockquote > p {
+  margin:10px;
+  color:gray;
+  font-size:0.8em;
+}
+
+.highlighter-rouge{
+  width:77%;
+  background-color: rgba(202, 194, 185, 0.25);
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h4 > a {
+  text-decoration: none;
+}

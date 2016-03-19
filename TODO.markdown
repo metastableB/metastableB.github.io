@@ -2,10 +2,12 @@
 [X] Fix image of blog entry
 [ ] Coffee page
 [ ] Logo for all the pages
-[ ] Music Discovery Page
-[ ] Preview text for index page
+[X] Music Discovery Page markdown
+[ ] Music Discovery Page content
+[X] Preview text for index page
 [ ] Fix footer for blog index
-[ ] Inshorts
+[X] Inshorts
+[ ] Page by page rewite except music discovery
 
 ## Differed
 [ ] Add share like buttons to blog entry

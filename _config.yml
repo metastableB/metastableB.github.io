@@ -11,3 +11,5 @@ github_username:  metastableB
 markdown: kramdown
 paginate-path: "page:num"
 default-header-img: /img/1920_1080.jpg
+kramdown:  
+  parse_block_html: true

@@ -1,5 +1,5 @@
 ---
-layout: post_md
+layout: post_mdl
 key: a5
 title: Music Discovery  
 date:  2015-11-15 08:30 +0530 
@@ -7,10 +7,11 @@ categories: projects
 author: Don Dennis
 header-img: /img/music_disc.jpg
 bg-class-name: music_discovery
+summary: A possible dead-end project I'm on through which I try to explore what individual characteristics influence a persons taste in music, and if it can be quantified.
 ---
 **_tldr:_** *I am not really satisfied with existing music recommendation/discovery systems and hence try to find out more about the research being done in the area. I try and see if a system based on a purely taste and context based learning model is feasible. I read a bunch of papers and realize that a lot of work has been done in the field but in a scattered fashion. I try to explore if these works can be combined and improved and eventually stumble upon last.fm and pandora. Pandora and last.fm do most of the things I want in the software I have in mind but when both of them are considered together.*
 
-___
+<hr>
 
 The idea is to see if a learning based music recommendation model is feasible, and compare the existing ones on how they perform. As I discuss below, learning models for suggestions of different kinds - movies, music, book etc, exist and are extensively used. They generally use classifications based on the the usual set of attributes and trends which in some sense can be quantified. I've observed that these models are not always perfect, especially when it comes to music. There is an inherent quality to music that defines a persons taste and that is what I am really interested in. Can we really learn more about this? Can we teach a machine learn your taste and make decisions based on context? I have a strong feeling we can.
 
@@ -49,7 +50,7 @@ At this point I guess I'm going to read more on them and use the technology to s
 
 ___
 
-### [Music Recommendation Based on Acoustic Features and User Access Patterns][5]
+#### [Music Recommendation Based on Acoustic Features and User Access Patterns][5]
     ~2009
     Bo Shao, Sch. of Comput. Sci., 
     Florida Int. Univ., Miami, FL, USA 
@@ -59,7 +60,7 @@ ___
 
 This is pretty recent work and what I'm going to start with. The ideas seem sound and the results are encouraging. They underline a method utilizing content feature as well has user access patterns. If I could incorporate the music nature/mood as a music feature and figure out how to use context information as outlines in [3][3] I can make a unsupervised self correcting (secondary correction) plugin for Clementine. Using the mood information and lastfm integration already available in Clementine, this can be possibly extended to using web data as well, possibly improving results.
 
-### [A music recommendation system based on music data grouping and user interests][2] 
+####[A music recommendation system based on music data grouping and user interests][2] 
     2001
     Hung-Chen Chen  National Tsing Hua University Hsinchu, Taiwan
     Arbee L. P. Chen    National Tsing Hua University Hsinchu, Taiwan
@@ -71,7 +72,7 @@ The only downside I see here is them using **MIDI** objects to do the initial an
 
 Again, remember that `clementine` is able to plot a music mood graph on a per song basis. Is it possible that similar songs can be clustered on the basis of this mood graph? Maybe, this can even be used in place of the MIDI based model to comparable or even better results? 
 
-### [A Context-Aware Music Recommendation System Using Fuzzy Bayesian Networks with Utility Theory][3]
+####[A Context-Aware Music Recommendation System Using Fuzzy Bayesian Networks with Utility Theory][3]
     ~2006
     Han-Saem Park
     Ji-Oh Yoo
@@ -88,7 +89,7 @@ Then after you have established a reasonable model, implement the mood based cla
 
 The finally, move on to implement a fuzzy decision making model, using context aware systems to finish off what you actually started to build.
 
-### [Foafing the Music : Bridging the Semantic Gap in Music Recommendation][4]
+####[Foafing the Music : Bridging the Semantic Gap in Music Recommendation][4]
     ~2006
     Oscar Celma, Music Technology Group, 
     University Pompeu Fabra, Barcelona, Spain
