@@ -1,20 +1,31 @@
 ---
-layout: blog_home_mdl
+layout: inshorts_mdl
 ---
 
 
   <body>
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
       <main class="mdl-layout__content">
+        <div class="demo-back" style="top:10px;">
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/blog" title="go back" role="button">
+          <i class="material-icons" role="presentation">arrow_back</i>
+        </a>
+        </div>
         <div class="demo-blog__posts mdl-grid">
-
         <!-- latest -->
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--6-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="/inshorts">In shorts</a></h3>
+              <h3><a href="/insorts">In shorts</a></h3>
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
               Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
@@ -25,32 +36,30 @@ layout: blog_home_mdl
             </div>
           </div>
 
-        <!-- DP Card -->
-          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-              <img src="/img/mdl/dp2.jpg">
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="/insorts">In shorts</a></h3>
             </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these probably will make it to a blog one day, hopefully. Most of it though, won't.
+              Ah inShorts! This part contains tiny entries, random things that pop up into the mind. Some of these 
 
-            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
               <div>
-                <strong>Don Dennis (metastableB)</strong>
+                <strong>Don Dennis</strong>
+                <span>2 days ago</span>
               </div>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
-                <li class="mdl-menu__item"><a href="/" class = "remove-link-style">Home</a></li>
-                <li class="mdl-menu__item"><a href="/#About" class = "remove-link-style">About</a></li>
-                <li class="mdl-menu__item"><a href="/#Contact" class = "remove-link-style">Contact</a></li>
-              </ul>
-              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">more_vert</i>
-                <span class="visuallyhidden">show menu</span>
-              </button>
             </div>
           </div>
 
+        
   {%  for post in site.posts %}
   		  {% if post.isInShort %}
   		<!-- We ignore inshorts -->
-          {% else if post.header-img %}
+          {% if post.header-img %}
            <div class="mdl-card {{ post.bg-class-name }} mdl-cell mdl-cell--12-col"  >
             <div class="mdl-card__media mdl-color-text--grey-50">
               <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -83,6 +92,7 @@ layout: blog_home_mdl
             </div>
           </div>
           {% endif %}
+        {% endif %}
   {% endfor %}
 
 
