@@ -12,4 +12,4 @@
 ## Differed
 [ ] Add share like buttons to blog entry
 [ ] Add comments to blog entry
-[ ] Drop down menu in blog index    
+[X] Drop down menu in blog index    
