@@ -296,8 +296,9 @@ body .demo-blog {
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
+
+
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('/img/mdl/road_big.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -319,7 +320,8 @@ body .demo-blog {
           flex-direction: column;
 }
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
-  max-width: 512px;
+  width: 80%;
+  max-width: 700px;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;

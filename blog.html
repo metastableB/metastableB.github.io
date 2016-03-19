@@ -1,40 +1,138 @@
 ---
-layout : blog_home_mdl
+layout: blog_home_mdl
 ---
-<!-- TODO : remove post-list class as its a jekyll class. use post-list-extended instead
-<div class="post-list-container scheme-2">
-	<div class="container post-list">
-	    {% for post in site.posts %}
-	    <div class="row post-list-entry">
-	        <div class="col-md-12 text-right post-list-meta">{{ post.date | date: "%b %-d, %Y" }}</div>	
-	        <h2>
-	          <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	        </h2>
-	    </div>  
-		    {% endfor %}
-	</div>
-</div>-->
 
-<div class="container-fluid post-list-container">
-	<div class="container">
-		{%  for post in site.posts %}
-		<div class="row post-list-entry">
-			<div class="col-md-4 text-center">
-				<img src="/img/1024_760.png" alt="post img" class="post-img">
-			</div>
-			<div class="col-md-8 text-center">
-				<div class="row post-list-meta">
-					{{ post.date | date: "%b %-d, %Y" }}
-				</div>
-				<div class="row post-list-link">
-					 <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</div>
-				<div class="posr-discr">
-					Lorem ipsum Esse consectetur fugiat esse nostrud aliquip ut nulla sit dolor dolore eu laborum voluptate exercitation Excepteur commodo laborum et laborum dolor proident sunt ullamco sed labore consectetur pariatur enim aute culpa quis nostrud incididunt.
-					Lorem ipsum Esse consectetur fugiat esse nostrud aliquip ut nulla sit dolor dolore eu laborum voluptate exercitation Excepteur commodo laborum et laborum dolor proident sunt ullamco sed labore consectetur pariatur enim aute culpa quis nostrud incididunt.
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-</div>
+
+  <body>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid">
+
+        <!-- latest -->
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Coffee Pic</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+
+        <!-- DP Card -->
+          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+              <img src="/img/mdl/dp2.jpg">
+            </div>
+
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+              <div>
+                <strong>Don Dennis (metastableB)</strong>
+              </div>
+              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+                <li class="mdl-menu__item"><a href="/" class = "remove-link-style">Home</a></li>
+                <li class="mdl-menu__item"><a href="/#About" class = "remove-link-style">About</a></li>
+                <li class="mdl-menu__item"><a href="/#Contact" class = "remove-link-style">Contact</a></li>
+              </ul>
+              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">more_vert</i>
+                <span class="visuallyhidden">show menu</span>
+              </button>
+            </div>
+          </div>
+
+  {%  for post in site.posts %}
+          {% if post.header-img %}
+           <div class="mdl-card {{ post.bg-class-name }} mdl-cell mdl-cell--12-col"  >
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Don Dennis</strong>
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__title mdl-color-text--grey-50">
+              <h3 class="quote"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Don Dennis</strong>
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+  {% endfor %}
+
+
+
+
+
+          <nav class="demo-nav mdl-cell mdl-cell--12-col">
+            <div class="section-spacer"></div>
+            <a href="entry.html" class="demo-nav__button" title="show more">
+              More
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">arrow_forward</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+        
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+              <span class="visuallyhidden">Twitter</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+              <span class="visuallyhidden">Facebook</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+              <span class="visuallyhidden">Google Plus</span>
+            </button>
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            <button class="mdl-mini-footer--social-btn social-btn__share">
+              <i class="material-icons" role="presentation">share</i>
+              <span class="visuallyhidden">share</span>
+            </button>
+          </div>
+        </footer>
+
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
+</html>

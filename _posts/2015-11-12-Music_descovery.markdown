@@ -5,7 +5,7 @@ title: Music Discovery
 date:  2015-11-15 08:30 +0530 
 categories: projects
 author: Don Dennis
-header-img: /img/snake_charmer_original.jpg
+header-img: /img/music_disc.jpg
 bg-class-name: music_discovery
 ---
 **_tldr:_** *I am not really satisfied with existing music recommendation/discovery systems and hence try to find out more about the research being done in the area. I try and see if a system based on a purely taste and context based learning model is feasible. I read a bunch of papers and realize that a lot of work has been done in the field but in a scattered fashion. I try to explore if these works can be combined and improved and eventually stumble upon last.fm and pandora. Pandora and last.fm do most of the things I want in the software I have in mind but when both of them are considered together.*

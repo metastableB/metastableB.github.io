@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: post_mdl
 key: a1
 title:  "Me and WebDev! : Part 1"
 date:   2015-12-04 05:33:41 +0530
 categories: general
 author: Don Dennis
-header-img: /img/snake_charmer_original.jpg
+header-img: /img/office-coffee.jpg
 bg-class-name: me_and_web_dev
 ---
 
