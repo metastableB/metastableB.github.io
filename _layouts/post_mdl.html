@@ -28,8 +28,9 @@
               </div>
         
               <div class="section-spacer"></div>
+
               <div class="meta__favorites">
-                425 <i class="material-icons" role="presentation">favorite</i>
+                <!--425 <i class="material-icons" role="presentation">favorite</i>
                 <span class="visuallyhidden">favorites</span>
               </div>
               <div>
@@ -38,7 +39,7 @@
               </div>
               <div>
                 <i class="material-icons" role="presentation">share</i>
-                <span class="visuallyhidden">share</span>
+                <span class="visuallyhidden">share</span>-->
               </div>
             </div>
            
@@ -109,14 +110,14 @@
           </div>
 
           <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-            <a href="/blog" class="demo-nav__button">
+            <a href="{{ page.next.url}}" class="demo-nav__button">
               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
               </button>
               Newer
             </a>
             <div class="section-spacer"></div>
-            <a href="/blog" class="demo-nav__button">
+            <a href="{{ page.previous.url }}" class="demo-nav__button">
               Older
               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
