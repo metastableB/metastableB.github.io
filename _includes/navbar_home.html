@@ -28,20 +28,33 @@ aria-expanded controls the state of the items (like being collapsed)
 		      <a class="navbar-brand" href="/">metastableB</a>
 		</div>
 		<div id="navbar-items" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right" id="navigation">
 			<!-- something like the default active element-->
 				<li class="active"><a href="/">Home</a></li>
 				<li><a href="/#About">About</a></li>
 				<li><a href="/#Interests">Interests</a></li>
 				<li><a href="/#Work">Work</a></li>
-				<li><a href="/#Contact">Contact</a></li>
 				<li><a href="/blog">Blog</a></li>
+				<li><a href="/#Contact">Contact</a></li>
 			</ul>
 		</div>
 		<script>
 			$(document).ready(function(){
 				$(document).scroll(function(){
 					var a = $(window).scrollTop();
+					$last = $( this );
+					var i = 0;
+					$('.article').each(function(){
+						$first = $(this);
+						if(a>$first.offset().top){
+							$last = $( this );
+							i++;
+						}
+						console.log($first.offset().top+','+a);
+					});
+
+					$('.active').removeClass('active');
+					$($('#navigation li').get(i)).addClass('active');
 				})
 			});
 		</script>
