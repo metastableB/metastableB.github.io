@@ -2,7 +2,7 @@
 layout: post_mdl
 key: a5
 title: Music Discovery  
-date:  2015-11-15 08:30 +0530 
+date:  2016-01-07 08:30 +0530 
 categories: projects
 author: Don Dennis
 header-img: /img/music_disc.jpg
