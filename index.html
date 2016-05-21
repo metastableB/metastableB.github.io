@@ -1,214 +1,85 @@
----
-layout : home
----
-	<!-- Header -->
-	<div class="article container-bg container-fluid" id="Home">
-			<div class="row header-position text-center">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-6 header-text text-center">
-					Hello, I'm Don.<br>
-					This is a little about me.
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="utf-8">
+		<title> Don Dennis</title>
+		<meta name="description" CONTECT="Personal webpage of Don Dennis.">
 
-					<div style="color:black;font-size:0.5em;"> I'm currently just building this page. Forgive me for the poor layout :D</div>
-				</div>
-				<div class="col-xs-3"></div>
-			</div>
-	</div>
+		<!-- For Icons -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+			<!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/android-desktop.png">
+    	<!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Don Dennis">
+    <link rel="apple-touch-icon-precomposed" href="img/android-desktop.png">
+    	<!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/android-desktop.png">
+    <meta name="msapplication-TileColor" content="#DBE2EF">
+    <link rel="shortcut icon" href="/img/favicon.png">
 
-	<!-- other content-->
-	<div class="article container-fluid scheme-1">
-		<div class="container">
-			<div class="row about" id = "About">
-				<div class="col-md-6">
-					<img src="/img/dp.jpg" alt="My portrait." class="img-responsive img-circle about-img">
-	  			</div>		
-				<div class="col-md-6 text-center">
-					<div class="row about-head text-center ">
-						Hello!
-					</div>
-					<div class="row about-text">
-						<p>Here you might find some information about my work, interests and opinions. I spent most of my early childhood in God's own country - Kerala. My time was dedicated to playing cricket with kits made of coconut tree leaves, fishing in the lakes nearby and climbing trees for guava fruits. Those were truly wonderful days!</p>
-						<p>Around the time I was 10, we moved to the majestic Delhi. Delhi was a totally different experience for me and exposed me to the best of the best in everything! I made a whole lot of great friends and great memories living here. I come home to Delhi whenever I get time!</p>
-						<p>Currently I'm pursuing my undergraduate studies at the Department of Computer Science and Engineering, IIT Patna.</p>
-						<p>I love listening to and discovering new music. Occasionally I write and also play the guitar.</p>
-						<p>I am a huge Pink Floyd Fan!.</p>
-						<br>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="article container-fluid scheme-2">
-		<div class="container">
-			<div class="interests row text-center" id="Interests">
-				<div class="col-md-8">
-					<div class="row interests-head">
-						Interests
-					</div>
-					<div class="row interests-text" >
-						<p>I'm a coffee to code guy.
-						<br> I love my coffee and I love my code.
-						</p>
-						<p>I mainly work at the lower level of computing, near the hardware software interface. Operating systems, kernel programming and embedded systems are things I spend a lot of time on. Having said that, I've had experience working on scale as well, specifically Big Data and MapReduce. I love working on machine learning tasks and try to keep updated on the latest developments in the field. Recently, I've started to venture into web development as well. 
-						You can find a detailed description of the projects I have been a part on in the following section.
-						</p>
-						<p>I am always looking for new and interesting opportunities. If you have anything for me, feel free to shoot me an email.</p>
-					</div>
-				</div>
-				<div class="col-md-4 image-responsive coffee-cup-container">
-					<img src="/img/coffee_shadow.png" alt="<coffee to code>" class="coffee-cup">	
-				</div>
-			</div>
-		</div>
-	</div>	
+	  <!-- Boot strap Baby! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+		<!-- Using font awesome for the icons (thank you OSS) -->
+		<script src="https://use.fontawesome.com/84a0e59ef1.js"></script>
 
-	<div class="article container-fluid scheme-1">
-		<div class="container">
-			<div class="work row text-center" id="Work">
-				<div class="row work-head">
-					Work
-				</div>
-				<div class="row work-text">
-						<p>These are some of the major projects I've worked on over the years. I'll add details regarding each of them shortly, but for the mean time feel free to go over my<a href="/resume/Don_Dennis_Candidate_K.pdf" style="color:black;"> resume.</a>
-						</p>	
-				</div>
-				<div class="row" style="margin-top:7px;"> 
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="https://www.hackerrank.com/metastableB"><span class="work-card-link"><img src="/img/hackerrank.png" alt="competitive" class="work-img"></span></a>
-							</div>
-							<div class="row work-img-discr">
-								I have recently started to work on my algorithm and data structure skills and have been practicing on HackerRank. 
-							</div>
-						</div>
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="https://github.com/metastableB/WITCH_On_A_Board">
-									<span class="work-card-link"><img src="/img/gsoc15.png" alt="GSoC '15" class="work-img"></span>
-								</a>
-							</div>
-							<div class="row work-img-discr">
-								I was selected as a summer intern for Google Summer of Code 2015. I worked for MinnowBoard.
-							</div>
-						</div>
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="https://github.com/metastableB/bigDataExperiments">
-									<span class="work-card-link"><img src="/img/mapreduce.png" alt="MapReduce" class="work-img"></span>
-								</a>
-							</div>
-							<div class="row work-img-discr">
-								I was as a research associate at IIIT-Delhi during Apr - Dec 2015. My research focused on adapting RAM model algorithms and data structures to the MapReduce based model.
-							</div>
-						</div>
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="http://www.mixxx.org">
-									<span class="work-card-link"><img src="/img/mixxx.png" alt="Mixxx" class="work-img"></span>
-								</a>
-							</div>
-							<div class="row work-img-discr">
-								I was a contributor to Mixxx - an free and open source DJying platform. I specifically worked on AutoDJ. We just had a major release!
-							</div>
-						</div>
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="http://www.witch-e.org/">
-									<span class="work-card-link"><img src="/img/witche.png" alt="competitive" class="work-img"></span>
-								</a>
-							</div>
-							<div class="row work-img-discr">
-								I am an active member of the WITCH-E project. Our aim is to understand and simulate the Harwell WITCH so that it can be used as a learning tool for children.
-							</div>
-						</div>
-						<div class="col-md-4 work-img-card">
-							<div class="row work-img-container">
-								<a href="https://github.com/metastableB/tinyOS">
-								<span class="work-card-link"><img src="/img/flat_pc.png" alt="Tiny OS" class="work-img"></span></a>
-							</div>
-							<div class="row work-img-discr">
-							I used a toyOS implementation and build it into a basic working 80x86 targeted,
-							operating system, handling scheduling, deadlocks, file system, VM etc.
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="article container-fluid scheme-2">
-		<div class="container">
-			<div class="blog row text-center" id="Blog">
-				<a href="/blog" class="blog-head">Blog</a>
-				<div class="blog-text">
-					<p>Ah, a collection of things I have written and things I have failed to write.
-					<br>That did not make much sense did it? Oh well.
-					<br>You can find my blog <a href="/blog" >here</a>. I try to keep it updated on a monthly basis.
-					</p>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="article container-fluid scheme-1">
-		<div class="container">
-			<div class="contact row text-center" id="Contact">
-				<div class="row contact-head">
-					Contact
-				</div>
-				<div class="row contact-text">
-					<p>I would love to hear from you, be it bugs or hugs. My email is don.k.dennis[at]gmail.com <i><br>note to spammers : I'll hunt you down and gut you like a fish. Cheers :)</i>
-					</p>
-					<p>I regularly hangout on <b>IRC</b>, mostly with the handle <span class="code-like">metastableB</span> or <span class="code-like">metastableb</span>. Feel free to ping me there as well. Here are links to my public profiles.
-					</p>
-				</div>
-			</div>
+		<!-- My Styles (Baby) -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<body>
+		<div class="container top-buffer-rel">
+			<!-- Image -->
 			<div class="row">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-2 text-center">
-					<a href="https://github.com/metastableB"><img src="/img/github_cat.png" alt="github" class="contact-img"></a>
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<img src="img/profile_pic_3.jpg" alt="Its Me" class="img-rounded center-block profile-pic">
 				</div>
-				<div class="col-xs-2 text-center">
-					<a href="http://in.linkedin.com/in/donkdennis
-					"><img src="/img/linkedin.png" alt="linkedin" class="contact-img"></a>
+				<div class="col-sm-4"></div>
+			</div>
+
+			<!-- Header -->
+			<div class="row top-buffer-abs-l">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 text-center">
+					<h1>Don Dennis</h1>
+					<h4 class="h4-mod">(metastableB)</h4>
 				</div>
-				<div class="col-xs-2 text-center">
-					<a href="https://www.facebook.com/don.kool"><img src="/img/facebook.png" class="contact-img" alt="facebook"></a>
+				<div class="col-sm-8"></div>
+			</div>
+			
+			<!-- Body text -->
+			<div class="row top-buffer-abs-l">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<p>LorelLorem ipsum Dolore dolore ad in occaecat nulla in deserunt in laboris fugiat culpa aliqua ut. Lorem ipsum Ut minim dolor nisi cillum sunt sed velit ullamco do nisi dolor aliqua sed Ut in consectetur dolore ea proident nulla officia ut dolore deserunt anim id Excepteur amet aute.</p>
+					<p>LorelLorem ipsum Dolore dolore ad in occaecat nulla in deserunt in laboris fugiat culpa aliqua ut. Lorem ipsum Ut minim dolor nisi cillum sunt sed velit ullamco do nisi dolor aliqua sed Ut in consectetur dolore ea proident nulla officia ut dolore deserunt anim id Excepteur amet aute.</p>
+					<p>LorelLorem ipsum Dolore dolore ad in occaecat nulla in deserunt in laboris fugiat culpa aliqua ut. Lorem ipsum Ut minim dolor nisi cillum sunt sed velit ullamco do nisi dolor aliqua sed Ut in consectetur dolore ea proident nulla officia ut dolore deserunt anim id Excepteur amet aute.</p>
 				</div>
-				<div class="col-xs-3"></div>
+				<div class="col-sm-2"></div>
+			</div>
+
+			<!-- footer -->
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 text-center socio-icons">
+					<a href="https://www.facebook.com/don.kool">
+						<i class="fa fa-facebook-square fa-1x" aria-hidden="true"></i>
+					</a> &nbsp;
+					<a href="mainto:donkdennis@gmail.com?Subject=Hello%20There">
+						<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+					</a> &nbsp;
+					<a href="https://in.linkedin.com/in/donkdennis">
+						<i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>
+					</a> &nbsp;
+					<a href="https://github.com/metastableB">
+						<i class="fa fa-github-square fa-1x" aria-hidden="true"></i>
+					</a>
+				</div>	
+				<div class="col-sm-4"></div>
 			</div>
 		</div>
-	</div>
-
-<!--
-	TODO:
-		[ ] Fix the weird drop down auto align behavior.
-			Reproduction: Just pull the drop down menu down,
-				using a regular click on a smaller screen.
-		[ ] Add a better transition to the navbar button
-		[ ] Add a better transition between sections of the page
-		[ ] Indicate the correct 'active' section 
-		[ ] Jekylls _include/header.html has the code to using
-			SVN for github and others, use it
-		[ ] Use the _layout/post.html to better layout your posts
-		[ ] Fix footer alignment issues
-		
-		coffee cup attribution
-		<div>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-	
-		cloud computing (mapreduce attribution)
-		
-		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-
-		github cat
-
-		<div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-
-
-		linkedIn
-
-		<div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-
-		facebook
-		<div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-		-->
+	</body>
+</html>
