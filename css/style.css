@@ -4,7 +4,7 @@
     margin-right: auto;
 }
 
-.top-buffer { 
+.top-buffer-abs { 
 	margin-top:20px; 
 }
 
@@ -31,4 +31,9 @@
 
 .h4-mod {
 	color: #928D8D;
+}
+
+.a-rm-deco {
+	color: inherit;
+	text-decoration: none;
 }
