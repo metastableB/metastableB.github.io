@@ -1,0 +1,61 @@
+<!-- The navbar class is used for the navigation bar on top. It is responsive and collapses 
+	 as necessary.
+	 The nav bar header , well defines the header and the button we define is the button 
+	 that is created in the mobile version for the option drop down
+-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+<!--
+Navbar header seems to be the portion of the navbar that always seems to be present.
+
+the bootstrap collapse class indicates collapsible elements, which can collapse expand on click.
+To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).
+
+Note: For <a> elements, you can use the href attribute instead of the data-target attribute
+
+aria-expanded controls the state of the items (like being collapsed)
+-->
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+		    <!-- sr-only : screen reader only -->
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		      <a class="navbar-brand" href="/">metastableB</a>
+		</div>
+		<div id="navbar-items" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right" id="navigation">
+			<!-- something like the default active element-->
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/#About">About</a></li>
+				<li><a href="/#Interests">Interests</a></li>
+				<li><a href="/#Work">Work</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/#Contact">Contact</a></li>
+			</ul>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$(document).scroll(function(){
+					var a = $(window).scrollTop();
+					$last = $( this );
+					var i = 0;
+					$('.article').each(function(){
+						$first = $(this);
+						if(a > $first.offset().top){
+							$last = $( this );
+							i++;
+						}
+					});
+
+					$('.active').removeClass('active');
+					$($('#navigation li').get(i)).addClass('active');
+				})
+			});
+		</script>
+	</div>
+</nav>

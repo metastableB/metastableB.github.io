@@ -1,0 +1,108 @@
+
+.post-list-container {
+	background-color: rgba(255, 255, 185, 1);
+	padding-top:70px;
+	padding-bottom: 70px;
+	min-height:100%;
+}
+.post-list-entry{
+    background-color: rgb(168, 208, 102);
+    border-radius: 4px;
+    margin-bottom:6px;
+    box-shadow: 1.5px 3px 3px #888888;
+    padding:10px;
+}
+.post-list-meta {
+	color: rgba(67,103,128,1);
+	padding:0;
+}
+.post-list-link {
+	color : rgba(35,138,137,1);
+	font-size: 30px;
+}
+.post-img{
+	width: 250px;
+	height:auto;
+}
+.post-discr{
+
+}
+.post-footer-small-content {
+	position:fixed;
+	bottom:0%;
+	left:0%;
+	right:0%;
+}
+
+
+/*
+ * WARNING : Donot forget to define image source;
+ *
+ */
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+    height:60%;
+    padding-top:70px;
+    position:relative;
+}
+
+.image-bg-fixed-height {
+    height: 450px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.post-header-container{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom:1%;
+}
+.post-header-shadow{
+	position:absolute;
+	top:35%;
+	padding:5%;
+	width:60%;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 4px;
+}
+.post-header-h1{
+	font-weight: 900;
+    font-size: 3.5em;
+    color: aqua;
+}
+.post-header-subtext{
+	color:rgba(236, 180, 104,1);
+}
+.post-content-container {
+	padding-top :5%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom:5%;
+}
+.post-content{
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	
+.post-content-container {
+	padding-top :5%;
+	padding-left: 15%;
+	padding-right: 15%;
+	}	
+}
+/* because bootstrap block quote sucks*/
+blockquote{
+    font-size: 12.5px;
+    border-left: 5px solid #BBBABA;
+    background-color: rgb(220, 220, 220);
+}
