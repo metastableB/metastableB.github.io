@@ -17,9 +17,14 @@
 }
 
 .profile-pic{
-	max-width:250px;
+	max-width:200px;
 }
 
 .container-background {
 	
+}
+
+.socio-icons > a {
+	color: #B0ABAB;
+	text-decoration: none;
 }
