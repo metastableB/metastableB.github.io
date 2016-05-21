@@ -1,0 +1,300 @@
+/*
+ * Global and bootstrap overries
+ */
+
+ html, body{
+ /*
+ * children elements ignore min-height when calculating
+ * their own height, and hence absolute values are required here.
+ http://www.456bereastreet.com/archive/201306/height_in_percent_when_parent_has_min-height_and_no_height/
+ */
+  height: 100%;
+  width:100%;
+}
+.row {
+	/* removing margins */
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.container-fluid {
+	padding: 0%;
+}
+
+/* COLOR SCHEME
+ *
+ * do not name classes according to color names, 
+ * working out a few colors from their RGB is much 
+ * less painful than having to change entire
+ * html doc structure after name updates.
+ */
+.scheme-1 {
+	background-color: rgba(255, 255, 185, 1);
+	background-size: 100%;
+ 	-o-background-size: cover;
+}
+.scheme-2{
+	background-color: rgba(231,231,231,1);
+	background-size: 100%;
+ 	-o-background-size: cover;
+}
+
+
+/* Element specific CSS */
+
+.container-bg{
+ 	/* Set rules to fill background */
+ 	min-height: 100%;
+ 	min-width: 100%;
+
+ 	/* Set up proportionate scaling */
+ 	width: 100%;
+ 	height: 100%;
+ 	position:relative;
+ 	top:0%;
+ 	left:0%;
+ 	/* set imgae */
+ 	background-image: url('/img/light_side_of_the_moon.jpg');
+ 	background-position: center;
+ 	background-size: cover;
+ 	-o-background-size: cover;
+ }
+
+.header-position{
+	position:absolute;
+	bottom:0;
+	left:10%;
+	right:10%;
+	width:80%;
+	padding-bottom:70px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header-text {
+	color:#137700;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.header-subtext {
+	color:#137700;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 1em;
+}
+
+.about {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom:4%;	
+}
+.about-head {
+	font-weight: bold;
+	font-size: 3em;
+}
+.about-text {
+	font-weight: bold;
+}
+
+.about-img{
+	width:273px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 80px;
+	margin-bottom: auto;
+	display:block;
+	box-shadow:3px 3px 3px #888888;
+}
+
+@media screen and (max-width: 992px){
+	.about-img{
+		margin-top:0px;
+		margin-bottom:10px;
+	}
+}
+.interests{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom:5%;
+}
+.interests-head {
+	font-weight: bold;
+	font-size: 3em;
+}
+.interests-text {
+	font-weight: bold;
+}
+.coffee-cup-container{
+	min-height: 100%;
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.coffee-cup{
+	margin:auto;
+	max-width:200px;
+}
+@media only screen and (max-width: 992px) {
+    .coffee-cup {
+    	margin-top:10px;
+    	width:100px;
+    }
+    .coffee-cup-container{
+    	padding:0.1%;
+    }
+}
+
+.work{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom:5%;
+}
+.work-head {
+	font-weight: bold;
+	font-size: 3em;
+}
+.work-text {
+	font-weight: bold;
+}
+
+.work-img-card{
+	margin-bottom: 7px;
+	background-color: rgba(241, 148, 49, 0.73);
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #888888;
+}
+.work-img-container{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	height:150px;	
+}
+.work-img{
+	margin-top:10px;
+	width: 145px;
+}
+.work-img-discr{
+	margin-top:7px;
+	margin-bottom:3px;
+	padding:3px;
+	padding-bottom:20px;
+}
+
+
+.work-card-link{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('/img/empty.gif');
+}
+@media screen and (min-width: 992px){
+	.work-img-card{
+		max-width: 31%;
+		margin-top:7px;
+		margin-right:1%;
+		margin-left: 1%;
+	}
+	.work-img-discr{
+		height:8em;
+		padding-bottom:3px;
+	}
+}
+
+
+.blog {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom:10%;
+}
+.blog-head {
+	font-weight: bold;
+	-webkit-column-rule: #333;
+	-moz-column-rule: #333;
+	-o-column-rule: #333;
+	column-rule: #333;
+	color:rgb(51,51,51);
+	font-size: 3em;
+}
+.blog-text {
+	font-weight: bold;
+}
+
+.contact {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom:3%;
+}
+.contact-head {
+	font-weight: bold;
+	font-size: 3em;
+}
+.contact-text {
+	font-weight: bold;
+}
+
+.contact-img {
+	width:40px;
+	margin-bottom:20px;
+}
+
+/* em is basically twice the height of a font char */
+.footer {
+	padding-top:1%;
+	padding-bottom: 0.5%;
+	min-height:2em;
+	color: #FFFFFF;
+	background-color: #777777;
+	border-radius: 2px;
+}
+.footer-subheading{
+	font-weight: lighter;
+	font-size: xx-small;
+}
+
+.footer-sugar {
+	font-size: 90%;
+    color: rgb(8, 0, 255);
+    padding-left: 2px;
+    padding-right:2px;
+    background-color: rgba(63, 255, 40, 0.3);
+    border-radius: 4px;
+}
+.code-like {
+    padding: 2px 4px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    font-size: 90%;
+    color: #55FF43;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 4px;
+}
+
+.wanderer-404-img{
+	background-image: url(../img/wanderer_404.jpg);
+}
+
+.header-404-position {
+	position: absolute;
+	top:100px;
+	left:0;
+	right:0;
+}
+
+.text-404{
+	font-weight:800;
+	color:#4A3C33;
+}
