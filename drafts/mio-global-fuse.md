@@ -138,7 +138,7 @@ Note that the notification property is included. What this means is that we can 
 That is, we need to find out the handle for the notification discriptor and write 1 to the 0th bit.
 
 Again, running char-desc on the corresponding handles for the service (attr handle 0x000c and end grp handle 0x0011) we see the characteristics provided are:
-![gatttool-char-desc-heartrate](img/gatttool-char-desc-heartrate)
+![gatttool-char-desc-heartrate](img/gatttool-char-desc-heartrate.png)
 
 We can see the notification discriptor(0x2902) and the heart rate measurement (0x2a37) with handles 0x000f and 0x000e respectively. We need to write 0x0001 to the notification handle. The values written are in big endian(?) so we need to write 0x0100. To write to a handle, we use the `char-write-req` command.
 
@@ -199,7 +199,7 @@ Therefore our command has the following parts
     $ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-write-req --handle=0x000f --value=0100 --listen
 
 And voila! you have notifications!
-![img](gatttool-char-write-req-nonI-mio.png)
+![img](img/gatttool-char-write-req-nonI-mio.png)
 
 
 
@@ -262,26 +262,27 @@ And voila! you have notifications!
 
 
 # NON interactive
-don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:08
-(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --primary
-attr handle = 0x0001, end grp handle = 0x0007 uuid: 00001800-0000-1000-8000-00805f9b34fb
-attr handle = 0x0008, end grp handle = 0x000b uuid: 00001801-0000-1000-8000-00805f9b34fb
-attr handle = 0x000c, end grp handle = 0x0011 uuid: 0000180d-0000-1000-8000-00805f9b34fb
-attr handle = 0x0012, end grp handle = 0x0015 uuid: 0000180f-0000-1000-8000-00805f9b34fb
-attr handle = 0x0016, end grp handle = 0x001d uuid: 6c721826-5bf1-4f64-9170-381c08ec57ee
-attr handle = 0x001e, end grp handle = 0x002b uuid: 6c721838-5bf1-4f64-9170-381c08ec57ee
-attr handle = 0x002c, end grp handle = 0xffff uuid: 0000180a-0000-1000-8000-00805f9b34fb
-don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
-(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-desc --start=0x000c --end=0x0011
-handle = 0x000c, uuid = 00002800-0000-1000-8000-00805f9b34fb
-handle = 0x000d, uuid = 00002803-0000-1000-8000-00805f9b34fb
-handle = 0x000e, uuid = 00002a37-0000-1000-8000-00805f9b34fb
-handle = 0x000f, uuid = 00002902-0000-1000-8000-00805f9b34fb
-handle = 0x0010, uuid = 00002803-0000-1000-8000-00805f9b34fb
-handle = 0x0011, uuid = 00002a38-0000-1000-8000-00805f9b34fb
-don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
-(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-write-req --handle=0x000f --value=0000 --listen
-Characteristic value was written successfully
+
+    don@metastableB-arch:~                          26/07/2016 Tue 19:08
+    (untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --primary
+    attr handle = 0x0001, end grp handle = 0x0007 uuid: 00001800-0000-1000-8000-00805f9b34fb
+    attr handle = 0x0008, end grp handle = 0x000b uuid: 00001801-0000-1000-8000-00805f9b34fb
+    attr handle = 0x000c, end grp handle = 0x0011 uuid: 0000180d-0000-1000-8000-00805f9b34fb
+    attr handle = 0x0012, end grp handle = 0x0015 uuid: 0000180f-0000-1000-8000-00805f9b34fb
+    attr handle = 0x0016, end grp handle = 0x001d uuid: 6c721826-5bf1-4f64-9170-381c08ec57ee
+    attr handle = 0x001e, end grp handle = 0x002b uuid: 6c721838-5bf1-4f64-9170-381c08ec57ee
+    attr handle = 0x002c, end grp handle = 0xffff uuid: 0000180a-0000-1000-8000-00805f9b34fb
+    don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
+    (untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-desc --start=0x000c --end=0x0011
+    handle = 0x000c, uuid = 00002800-0000-1000-8000-00805f9b34fb
+    handle = 0x000d, uuid = 00002803-0000-1000-8000-00805f9b34fb
+    handle = 0x000e, uuid = 00002a37-0000-1000-8000-00805f9b34fb
+    handle = 0x000f, uuid = 00002902-0000-1000-8000-00805f9b34fb
+    handle = 0x0010, uuid = 00002803-0000-1000-8000-00805f9b34fb
+    handle = 0x0011, uuid = 00002a38-0000-1000-8000-00805f9b34fb
+    don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
+    (untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-write-req --handle=0x000f --value=0000 --listen
+    Characteristic value was written successfully
 
      Notification handle = 0x000e value: 00 00 
      Notification handle = 0x000e value: 00 00 
