@@ -162,6 +162,46 @@ To disable the notification, write 0000 to the notifcation handle as indicated i
 
 Type exit at the prompt to exit from the interactive mode.
 
+## Non Interactive Mode
+
+The gatttool can also be used in a non interactive mode though I have had some stability issues with it. Its either that or that I don't really understand how to use gatttool yet.
+
+Anywho, I `gatttool --help-gatt` lists the commands that are provided by the gatttool as command line.
+
+Lets try to read the heartrate off the Mio Global Fuse using the command line. First we need to see the primary characteristics.
+
+     $ gatttool -t random -b [MAC] --primary
+     $ # For my case
+     $ gatttool -t random -b E0:A0:F4:BF:4B:72 --primary
+
+Now we view the characterstics of the heart rate service using the handles provided from the previous command. In `gatttool --help-params` we see that the start and end handles are provided with the --start and --end arguments.
+
+     $ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-desc --start=0x000c --end=0x0011 
+
+![character desc](img/gatttool-nonI-mio-primary-desc.png)
+
+From the returned output, we notice that the notification service 0x2902 has a handle 0x000f and the heart rate measurement is at 0x000e. Again refering to the help in `gatttool --help-char-read-write` we notice that the `char-write-req` is the argument we use to write with a response.
+
+We need to figure out how we are going to specify the handle to wirte to and the value to write. Looking at `gatttool --help-char-read-write` we see that the handle is provided with the `--handle` flag and the value using the `--value` flag.
+
+Also, we need our command to wait for the notifications from the device rather than exit prematurely. In `gatttool --help-char-read-write`, we notice that `--listen` flag is used to listen for indications and notifications.
+
+Therefore our command has the following parts
+
+    $ # gatttool -t random -b [MAC] : to connect to the device
+    $ # --char-write-req: to specify that we are going to write
+    $ # --value=0100    : The value we want to write
+    $ # --hanle=0x000f  : The notificaiton handle
+    $ # --listen        : to instruct gatttool to listen for notifications
+    $
+    $ # therefore, for mycase, the final command becomes
+    $
+    $ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-write-req --handle=0x000f --value=0100 --listen
+
+And voila! you have notifications!
+![img](gatttool-char-write-req-nonI-mio.png)
+
+
 
 
 
@@ -221,3 +261,37 @@ Type exit at the prompt to exit from the interactive mode.
      [E0:A0:F4:BF:4B:72][LE]> 
 
 
+# NON interactive
+don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:08
+(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --primary
+attr handle = 0x0001, end grp handle = 0x0007 uuid: 00001800-0000-1000-8000-00805f9b34fb
+attr handle = 0x0008, end grp handle = 0x000b uuid: 00001801-0000-1000-8000-00805f9b34fb
+attr handle = 0x000c, end grp handle = 0x0011 uuid: 0000180d-0000-1000-8000-00805f9b34fb
+attr handle = 0x0012, end grp handle = 0x0015 uuid: 0000180f-0000-1000-8000-00805f9b34fb
+attr handle = 0x0016, end grp handle = 0x001d uuid: 6c721826-5bf1-4f64-9170-381c08ec57ee
+attr handle = 0x001e, end grp handle = 0x002b uuid: 6c721838-5bf1-4f64-9170-381c08ec57ee
+attr handle = 0x002c, end grp handle = 0xffff uuid: 0000180a-0000-1000-8000-00805f9b34fb
+don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
+(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-desc --start=0x000c --end=0x0011
+handle = 0x000c, uuid = 00002800-0000-1000-8000-00805f9b34fb
+handle = 0x000d, uuid = 00002803-0000-1000-8000-00805f9b34fb
+handle = 0x000e, uuid = 00002a37-0000-1000-8000-00805f9b34fb
+handle = 0x000f, uuid = 00002902-0000-1000-8000-00805f9b34fb
+handle = 0x0010, uuid = 00002803-0000-1000-8000-00805f9b34fb
+handle = 0x0011, uuid = 00002a38-0000-1000-8000-00805f9b34fb
+don@metastableB-arch:~                                                                                                   26/07/2016 Tue 19:09
+(untracked)$ gatttool -t random -b E0:A0:F4:BF:4B:72 --char-write-req --handle=0x000f --value=0000 --listen
+Characteristic value was written successfully
+
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 00 00 
+     Notification handle = 0x000e value: 10 56 ca 02 
+     Notification handle = 0x000e value: 10 53 e4 02 
+     Notification handle = 0x000e value: 10 50 00 03 00 03 
+     Notification handle = 0x000e value: 10 4e 14 03 
