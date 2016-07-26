@@ -1,11 +1,11 @@
-organising
-- setting up bluez and bluetooth BLE devices
-- understanding services, characterstics and gattprofile
-- generic way to read characterstics from a device (interactive and non interactve)
-- mio global fuse 
-- sensortag
-- using the gatt-api
-- Properties, Notifications
+Index
+- Setting up bluetooth dongle and bluez
+- Basics of BLE/GATT: services, characteristcs, gattprofiel, read write, notifications
+- Intro to generic where you outline the difference between MIO Global Fuse and sensor tag (No standard services in sensor tag)
+- Generic set of steps that can be followed: interactive and non interactve
+ (with MIO Global Fuse as example)
+- Sensor Tag
+
 
 # Reading Heart Rate from Health Band both interactively and non interactively: BLE, Bluez
 
