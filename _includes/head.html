@@ -4,7 +4,7 @@
 </head>
 -->
 
-<head>
+
 	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
@@ -44,5 +44,8 @@
 	<script src="https://use.fontawesome.com/84a0e59ef1.js"></script>
 
 	<!-- My Styles (Baby) -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+	{% if page.custom_css %}
+  	{% for stylesheet in page.custom_css %}
+  	<link rel="stylesheet" href="css/{{ stylesheet }}" media="screen" type="text/css">
+  	{% endfor %}
+	{% endif %}

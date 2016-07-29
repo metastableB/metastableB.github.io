@@ -1,0 +1,30 @@
+<div class="round-button-menu">
+	<div class="round-button-menu-group">
+		<a class="round-button-menu-element">about</a>
+		<a class="round-button-menu-element">blog</a>
+		<a class="round-button-menu-element">a two word</a>
+	</div>
+	<div class="round-button">...</div>
+</div>
+
+
+<script>
+var menu = $('.round-button-menu-group');
+var showMenu = function () {
+	menu.show();
+};
+
+var hideMenu = function () {
+	menu.hide();
+};
+
+var onClickMenu = function() {
+	if (menu.is(':visible'))
+		menu.hide();
+	else menu.show();
+};
+
+$('.round-button').click(onClickMenu);
+$('.round-button').hover(showMenu);
+$('.round-button-group').mouseout(hideMenu);
+</script>
