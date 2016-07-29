@@ -16,6 +16,6 @@ github_username:  metastableB
 
 # Build settings
 markdown: kramdown
-destination: /home/don/public_html/default_root/_site
+destination: /home/don/public_html/b_root/
 port: 4000
 host: dkdennis.xyz
