@@ -49,6 +49,15 @@
     font-family: Impact !important;
 }
 
+
+.round-button-menu {
+	z-index:1;
+	position:fixed;
+	right:20px;
+	bottom:20px;	
+	text-align:center;
+}
+
 .round-button {
 	position:relative;
 	float:right;
@@ -61,20 +70,13 @@
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    box-shadow: 0px 2px 2px #46310A;
+    box-shadow: 0px 0px 4px #46310A;
 }
 
 .round-button:hover {
-    box-shadow: 0px 1px 4px #928d8d;
+    box-shadow: 0px 0px 4px #928d8d;
 }
 
-.round-button-menu {
-	z-index:1;
-	position:fixed;
-	right:20px;
-	bottom:20px;	
-	text-align:center;
-}
 
 .round-button-menu-group {
 	display:none;
@@ -96,9 +98,13 @@
 	font-size:12px;
 	border: 1px solid #ffffff;
 	border-radius:40px;
-	box-shadow: 0px 1px 2px #46310A;
+	box-shadow: 0px 0px 2px #46310A;
 }
 
 .round-button-menu-element:hover {
-	box-shadow: 0px 1px 2px #928d8d;
+	box-shadow: 0px 0px 2px #928d8d;
+}
+
+.round-button-menu:hover > .round-button-menu-group {
+	display:block;
 }
