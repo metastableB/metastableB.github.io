@@ -1,0 +1,76 @@
+---
+layout: blog-feed
+title: Don Dennis | Blog
+excerpt: Personal Blog
+permalink: /blog/
+custom_css: style.css
+---
+<!-- Header -->
+<div class="row">
+  <div class="col-xs-1"></div>
+  <div class="col-xs-10">
+    
+    <div class="row text-center paper-title">
+      Sophesticated Sounding Title
+    </div>
+  
+    <span class="hr-line"></span>
+
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-4 text-center paper-subtitle">
+        Delhi, India
+      </div>
+      <div class="col-xs-4 text-center paper-subtitle">
+        {{ site.time | date: '%B %d, %Y' }}
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+
+    <span class="hr-line"></span>
+  </div>
+  <div class="col-xs-1"></div>
+</div>
+
+<!-- Body -->
+<div class="row paper-body">
+  <div class="col-xs-1"></div>
+ 
+  <!-- Side news -->
+  <div class="col-xs-3">
+    <div class="paper-intro-title">
+      Don starts a new blog
+    </div>
+    <div class="float-left">
+      <img src="/img/blog-profile-pic.png" alt="Its Me" class="paper-profile-pic">  
+    </div>
+    <div class="paper-intro-text">
+    <p><b>Delhi:</b> Laboris quis et consequat adipisicing sit dolor cupidatat dolore qui ut reprehenderit elit esse dolore in culpa incididunt Ut non.
+
+    Lorem ipsum Laboris quis et consequat adipisicing sit dolor cupidatat dolore qui ut reprehenderit elit esse dolore in culpa incididunt Ut non.
+    </p>
+    <p>
+    Lorem ipsum Laboris quis et consequat adipisicing sit dolor cupidatat dolore qui ut reprehenderit elit esse dolore in culpa incididunt Ut non.
+    </p>
+    </div>
+  </div>
+
+ 
+  <!-- Main articles -->
+  <div class="col-xs-6">
+    {% for post in site.posts limit:10 %}
+    <div class="news-article">
+      <div class="news-article-title">
+        <a href="{{ post.url }}" class="a-rm-deco">{{post.title}}</a>
+      </div>
+      <div class="news-article-body">
+        {% if post.article-img %}
+        <div class="news-article-img">{{post.article-img}}</div>
+        {% endif %}
+        <span class="news-article-text">{{post.description}}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="col-xs-2"></div>
+</div>
