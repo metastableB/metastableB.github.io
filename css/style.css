@@ -123,7 +123,7 @@
 
 
 .paper-body {
-	padding-top:5px;
+	padding-top:40px;
 }
 
 .paper-title {
@@ -194,6 +194,11 @@
     color:#46310A;
 }
 
+
+.news-article{
+	margin-top:4px;
+}
+
 .news-article-title{
 	font-size:2em;
 	font-weight:900;
@@ -203,10 +208,14 @@
 
 .news-article-text{
 	font-size:0.85em;
+	text-align: justify;
+    text-justify: inter-word;
 	font-family: "Times New Roman", Times, serif;
     color:#46310A;
 }
 
-.news-article{
-	margin-top:4px;
+.news-article-categories{
+	font-size:0.80em;
+	font-family: "Times New Roman", Times, serif;
+    color:#46310A;
 }

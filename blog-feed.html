@@ -57,7 +57,7 @@ custom_css: style.css
 
  
   <!-- Main articles -->
-  <div class="col-xs-6">
+  <div class="col-xs-7">
     {% for post in site.posts limit:10 %}
     <div class="news-article">
       <div class="news-article-title">
@@ -67,10 +67,17 @@ custom_css: style.css
         {% if post.article-img %}
         <div class="news-article-img">{{post.article-img}}</div>
         {% endif %}
-        <span class="news-article-text">{{post.description}}</span>
+        <span class="news-article-text">{{post.excerpt}}</span>
+        {% if post.categories %}
+          <span class="news-article-categories"><i>categories:
+            {% for cat in post.categories %}
+             &nbsp;{{cat}},
+            {% endfor %}
+            </i></span>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
   </div>
-  <div class="col-xs-2"></div>
+  <div class="col-xs-1"></div>
 </div>
