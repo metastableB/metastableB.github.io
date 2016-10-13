@@ -4,10 +4,8 @@ title:  "Introduction: Bluez, GATT and BLE Devices"
 date:   2016-08-31 16:24:33 +0530
 custom_css: style.css
 categories: Exploring-BLE
+excerpt: The first of a series of articles on working with BLE devices under Linux. This article includes a very brief overview of GATT Profile and BLE.
 ---
-
-{: style="color:gray; font-size: 80%;"}
-*Note that this is currently a preliminary draft. I'll be continuously improving it!*
 
 As part of an internship I did in the summer of 2016, at the Center for Smart Systems, SUTD Singapore, I had to get my hands dirty with a lot of BLE devices. For someone with no knowledge of how the Bluetooth stack works, this was like [insert doing something challenging]. This here, is my attempt to document what I have learned at SUTD.
 
@@ -37,8 +35,8 @@ Structure
     padding-top:1px;
     padding-bottom:15px;
     margin:0;"}
-1. [Introduction: Bluez, GATT and BLE Devices](./Bluez-GATT-and-BLE-Devices.html)
-2. BLE devices on Linux
+1. [Introduction: Bluez, GATT and BLE Devices](/exploring-ble/2016/08/31/Introduction-Bluez-GATT-and-BLE-Devices.html)
+2. [BLE devices on Linux](/exploring-ble/2016/08/31/BLE-Devices-On-Linux.html)
 3. `gatttool` interactive mode with MIO Global Fuse
 4. `gatttool` non interactive mode with MIO GLobal FUse
 5. How to use `gatttool` and BLE devices : Sensor Tag

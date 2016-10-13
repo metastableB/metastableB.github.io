@@ -11,7 +11,7 @@ custom_css: style.css
   <div class="col-xs-10">
     
     <div class="row text-center paper-title">
-      Sophesticated Sounding Title
+      Sophisticated Sounding Title
     </div>
   
     <span class="hr-line"></span>
@@ -30,6 +30,14 @@ custom_css: style.css
     <span class="hr-line"></span>
   </div>
   <div class="col-xs-1"></div>
+</div>
+
+<div class="row paper-warning">
+  <div class="col-xs-1"><i class="fa fa-warning paper-warning-symbol"></i></div>
+  <div class="col-xs-10">
+    Note that this space is currently being populated and the content is not final. Check back soon!
+  </div>
+  <div class="col-xs-1 text-center paper-warning-closebtn" onclick="this.parentElement.style.display='none';">&times;</div>
 </div>
 
 <!-- Body -->
@@ -65,7 +73,7 @@ custom_css: style.css
         {% if post.article-img %}
         <div class="news-article-img">{{post.article-img}}</div>
         {% endif %}
-        <span class="news-article-text">{{post.excerpt}}</span>
+        <p><span class="news-article-text">{{post.excerpt}}</span></p>
         {% if post.categories %}
           <span class="news-article-categories"><i>categories:
             {% for cat in post.categories %}
