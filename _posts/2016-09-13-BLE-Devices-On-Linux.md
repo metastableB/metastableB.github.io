@@ -117,4 +117,6 @@ Now to scan for BLE devices, we use the `lescan` option. Run,
 to scan for BLE devices. Make sure your BLE devices are turned on.
 ![hcitool-lescan](/img/blog/hcitool-lescan.png){: .blog-post-center-image .blog-post-div-shadow } 
 
-You can ignore teh unknown devicees in my output. 
+You can ignore the unknown devices in my output. We now have a working environment for BLE development on Linux. Next lets try talking to some BLE devices. In the [next]() article, I am going to use my BLE setup to talk to a [Mio Fuse](http://www.mioglobal.com/en-us/Mio-FUSE-Heart-Rate-Training-Activity-Tracker/Product.aspx) health band I have. I am going to use the `gatttool` to work with Mio Global Fuse in interactive and non-interactive mode.
+
+This article was about setting up the tools required for BLE development under Linux. 
