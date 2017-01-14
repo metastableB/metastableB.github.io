@@ -38,11 +38,11 @@ body{
 
 .h1-mod {
 	color: #150F05;
-	font-family: Impact !important;
+	font-family: sans-serif;
 }
 .h4-mod {
 	color: #B2A94F;
-	font-family: Impact !important;
+	font-family: sans-serif;
 }
 
 .a-rm-deco {
@@ -56,7 +56,7 @@ body{
 
 .body-text {
     color: #46310A;
-    font-family: Impact !important;
+    font-family: sans-serif;
 }
 
 
