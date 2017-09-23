@@ -275,3 +275,8 @@ body{
   	-moz-box-shadow: rgba(0,0,0,0.3) 0 2px 3px;
   	box-shadow: rgba(0, 0, 0, 0.3) 0 2px 3px;
 }
+
+.dark-alleys {
+	font-size: 0.6em;
+	font-style: italic;
+}
