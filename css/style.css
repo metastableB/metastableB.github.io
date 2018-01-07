@@ -5,6 +5,19 @@ body{
 	font-size:15px; 
 }
 
+.colortheme-navbar {
+	background-color: #ffffff;
+    border-color: #f4f0b1;
+}
+
+#colortheme-brand {
+	color:#000;
+}
+
+#colortheme-brand:hover {
+	color: #ae801a;
+}
+
 .center-block {
     display: block;
     margin-left: auto;
@@ -12,6 +25,10 @@ body{
 }
 
 .top-buffer-abs { 
+	margin-top:110px; 
+}
+
+.top-buffer-abs-s { 
 	margin-top:20px; 
 }
 
@@ -209,6 +226,7 @@ body{
     color: #9F6000;
     background-color: #FEEFB3;
 	margin: 10px;
+	margin-top:52px;
 	padding: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
