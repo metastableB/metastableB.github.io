@@ -7,7 +7,9 @@ permalink: /projects/
 
 <br><br>
 
+
 <div class="row">
+<!--TODO: Add advisors and location-->
   <div class="col-sm-4 text-center">
     <img src="/img/emirnn-02.png" class="img-fluid project-img" alt="EMI-RNN">
   </div>
@@ -15,6 +17,13 @@ permalink: /projects/
     <div class="row">
       <div class="col-sm-12 project-title"><a href='#'>Multiple Instance Learning for Sequential Data Classification on Resource Constrained Devices</a></div>
     </div>
+    <!--<div class="row">-->
+      <!--<div class="col-sm-12 project-category">-->
+        <!--<span class="project-tag">Machine Learning</span>-->
+        <!--<span class="project-tag">Time Series</span>-->
+        <!--<span class="project-tag">RNNs</span>-->
+      <!--</div>-->
+    <!--</div>-->
     <div class="row">
       <div class="col-sm-12 project-abstract">
         We explore the problem of sequential data (time series) classification
@@ -24,13 +33,15 @@ permalink: /projects/
         (MIL) like formulation, that exploits temporal nature of the data, we
         are able to reduce compute and memory requirements of RNNs by upto
         8x-72x which enables us to push such RNN based classifiers on to
-        resource constrained devices.
+        resource constrained devices. (Accepted to NIPS '18).
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col-sm-12 project-links">
-        [<a href='#'>Publication</a>][<a href='#'>Slides</a>][<a href='#'>Code</a>]
+        [<a href="/static/emi-rnn-preprint-01.pdf">Publication</a>]
+        [<a href="http://www.github.com/Microsoft/EdgeML/">Code</a>]
+        [<a href="/static/emi-rnn-yaml-01.pdf">Slides</a>]
       </div>
     </div>
   </div>
@@ -54,14 +65,17 @@ permalink: /projects/
         GesturePod, is reliable and robust to real world situations. The ML
         based approach as opposed to a rule based approach gives as
         extensibility in the sense that users can add new gestures to the
-        system with very low effort.
+        system with very low effort - programmability. (In submission, CHI
+        '19).
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col-sm-12 project-links">
-        [<a href='#'>Publication</a>][<a href='#'>Slides</a>][<a
-          href='#'>Press</a>]
+        [<a
+      href="https://www.microsoft.com/en-us/research/publication/gesturepod-programmable-gesture-recognition-augmenting-assistive-devices/">Microsoft Technical Report</a>]
+        [<a href="http://epaper.financialexpress.com/1462735/Indian-Express/December-11,-2017#page/8/1">Press 1</a>]
+        [<a href="https://blogs.microsoft.com/ai/ais-big-leap-tiny-devices-opens-world-possibilities/">Press 2</a>]
       </div>
     </div>
   </div>
@@ -90,16 +104,49 @@ permalink: /projects/
     <br>
     <div class="row">
       <div class="col-sm-12 project-links">
-        [<a href='#'>PDF</a>][<a href='#'>Slides</a>]
       </div>
     </div>
   </div>
 </div>
 <br><br>
 
+
 <div class="row">
   <div class="col-sm-4 text-center">
-    <img src="/img/talkbot.jpg" class="img-fluid project-img" alt="EMI-RNN">
+    <img src="/static/nagging.gif"  class="img-fluid project-img" alt="Nagging Naagin">
+  </div>
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-12 project-title"><a href='#'>Nagging Naagin: Q-Learning for Snake</a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 project-abstract">
+        Exploring fundamental ideas in reinforcement learning by teaching an
+        agent to play the classic game - Snake. We create a modular and
+        configurable snake simulation with two agents - the snake and an
+        adversarial agent who controls where the food is placed. This
+        multi bandit formulation allows us to explore a number of algorithms
+        with various levels of sophistication - reflex agents, min-max tress,
+        expectimax trees, Q-learning, approximate Q-learning and so forth.
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12 project-links">
+        [<a href='https://github.com/metastableB/Naagin-Naggin'>Code and Demo</a>]
+        [<a href='/static/Nagging-report.pdf'>Report</a>]
+        [<a href='/static/Nagging-01.pdf'>Slides Part 1</a>]
+        [<a href='/static/Nagging-02.pdf'>Slides Part 2</a>]
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <img src="/static/camera.svg" class="img-fluid project-img" alt="EMI-RNN">
   </div>
   <div class="col-sm-8">
     <div class="row">
@@ -107,90 +154,50 @@ permalink: /projects/
     </div>
     <div class="row">
       <div class="col-sm-12 project-abstract">
+        An attempt at automating in-class-room videography at low costs.
+        Multiple Raspberry Pi 3 based recording devices, each powered by a
+        cascaded person of interest tracking stack (MOG + Particle filter +
+        Viola Jones and DNN face recognizers), tracks the speaker and audience
+        from various camera angles and records and broadcasts the talk in real
+        time. All decisions on selecting camera angles, activating appropriate
+        audio devices, identifying the current active speaker and so forth is
+        arrived at through a distributed consensus. The prototype developed was
+        the <i><span style="color:green;">runner up</span> at Grand Challenge,
+          International Symposium on Embedded Computing and System Design,
+          2016</i>.
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col-sm-12 project-links">
-        [<a href='#'>PDF</a>][<a href='#'>Slides</a>]
+        [<a href='/img/TalkBot_Prototype.jpg'>Prototype</a>]
+        [<a href='/static/ISED_TalkBot.pdf'>Slides</a>]
       </div>
     </div>
   </div>
 </div>
 <br><br>
 
-<div class="row">
-  <div class="col-sm-4 text-center">
-  </div>
-  <div class="col-sm-8">
-    <div class="row">
-      <div class="col-sm-12 project-title"><a href='#'>Single Cycle RISC-V Micro Architecture Processor and its FPGA Prototype</a></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 project-abstract">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-sm-12 project-links">
-        [<a href='#'>Publication</a>][<a href='#'>Slides</a>]
-      </div>
-    </div>
-  </div>
-</div>
-<br><br>
 
 <div class="row">
   <div class="col-sm-4 text-center">
   </div>
   <div class="col-sm-8">
     <div class="row">
-      <div class="col-sm-12 project-title"><a href='#'>Nagging Naagin</a></div>
+      <div class="col-sm-12 project-title"><a href='#'>Universal IoT Gateway
+          with Disaster Resilient Communication Pathways</a></div>
     </div>
     <div class="row">
       <div class="col-sm-12 project-abstract">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-sm-12 project-links">
-        [<a href='#'>Publication</a>][<a href='#'>Slides</a>]
-      </div>
-    </div>
-  </div>
-</div>
-<br><br>
+        Developed a Universal IoT Gateway - a gateway that can command and
+        communicate with all and any IoT devices, regardless of the
+        communication protocol the specific device supports, be it BLE,
+        Bluetooth, WiFi or ZigBee. This cross-protocol communication is made
+        possible by an ontology based kernel that understands device specific
+        properties and communication atoms. The ability to communicate with
+        multiple protocols allowed the device to also double as a disaster
+        resilient communication pathway - a mesh network at the MAC layer.
 
-<div class="row">
-  <div class="col-sm-4 text-center">
-  </div>
-  <div class="col-sm-8">
-    <div class="row">
-      <div class="col-sm-12 project-title"><a href='#'>Singapore</a></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 project-abstract">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
       </div>
     </div>
     <br>
@@ -258,6 +265,59 @@ permalink: /projects/
   </div>
 </div>
 <br><br>
+
+<div class="row">
+  <div class="col-sm-4 text-center">
+  </div>
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-12 project-title"><a href='#'>Mixxx</a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 project-abstract">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12 project-links">
+        [<a href='#'>Publication</a>][<a href='#'>Slides</a>]
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <img src="/static/chip.png" class="img-fluid project-img" alt="EMI-RNN">
+  </div>
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-12 project-title"><a href='#'>Single Cycle RISC-V Micro Architecture Processor and its FPGA Prototype</a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 project-abstract">
+        Developed a RISC-V based single cycle micro architecture processor
+        optimized for low-cost embedded devices. The work also included a
+        compilation stack complete with a fully functional assembler and
+        simulator.
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12 project-links">
+        [<a href="https://ieeexplore.ieee.org/document/8303926/">Publication</a>]
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--- EMI-RNN : blog, ppt, link to paper-->
 <!--- WakeWord: blog, ppt?, link to paper,-->
 <!--- GesturePod: blog, ppt, link to paper-->
