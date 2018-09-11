@@ -9,13 +9,13 @@
 title: Don Dennis
 email: don@dkdennis.xyz
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website of Don Dennis (metastableB).
+  Personal website of Don Dennis.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dkdennis.xyz" # the base hostname & protocol for your site
 github_username:  metastableB
 
 # Build settings
 markdown: kramdown
-destination: /home/don/public_html/b_root/
-port: 4000
-host: localhost
+#destination: 
+#port: 4000
+#host: localhost
