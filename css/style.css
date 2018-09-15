@@ -351,3 +351,19 @@ body{
 .project-highlight {
   color: #0e6f0e;
 }
+
+.project-institute {
+}
+
+.project-collaborators {
+}
+
+.project-collab-row {
+  margin-bottom: 5px;
+  font-style: italic;
+  color: #5f5f5f;
+}
+
+.project-text-row {
+  margin-bottom: 5px;
+}
