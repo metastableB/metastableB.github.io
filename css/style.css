@@ -315,6 +315,9 @@ body{
   font-style: italic;
 }
 
+.post-content-font {
+  font-size: 1.1em;
+}
 .pub-authors {
   color:#5f5f5f;
 }
