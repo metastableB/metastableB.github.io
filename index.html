@@ -3,68 +3,89 @@ layout: default
 custom_css: style.css
 ---
 
-<!-- Image -->
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<img src="/img/profile_pic_3.jpg" alt="Its Me" class="img-rounded center-block profile-pic">
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+<!--[> Image <]-->
+<!--<div class="row">-->
+  <!--<div class="col-sm-4"></div>-->
+  <!--<div class="col-sm-4">-->
+    <!--<img src="/img/profile_pic_3.jpg" alt="Its Me" class="img-rounded center-block profile-pic">-->
+  <!--</div>-->
+  <!--<div class="col-sm-4"></div>-->
+<!--</div>-->
 
-	<!-- Heading -->
+  <!-- Heading -->
 <div class="row ">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8 text-center">
-		<h1 class="h1-mod">Don Dennis</h1>
-    Research Fellow @ Microsoft Research India <br>
-	</div>
-	<div class="col-sm-8"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8 text-left">
+    <h1 class="h1-mod">Don Dennis</h1>
+    <div class="home-qualification">
+    Research Fellow <br>
+    Machine Learning and Optimization Group<br>
+    Microsoft Research India<br>
+    </div>
+    <div class="home-contact">
+      <div class="row">
+        <div class="col-sm-6">
+          <i class="fa fa-envelope fa-1x" aria-hidden="true"></i> t-dodenn [at] microsoft [dot] com
+        </div>
+        <div class="col-sm-6">
+          <i class="fa fa-envelope fa-1x" aria-hidden="true"></i> donkdennis [at] gmail [dot] com
+        </div>
+        <div class="col-sm-6">
+          <a class="home-contact-a" href="https://in.linkedin.com/in/donkdennis">
+            <i class="fa fa-linkedin-square fa-1x"
+              aria-hidden="true"> donkdennis</i>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a class="home-contact-a" href="https://github.com/metastableB">
+            <i class="fa fa-github-square fa-1x" aria-hidden="true"> metastableB</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="col-sm-2"></div>
 </div>
-	
-	<!-- Body text -->
-<div class="row top-buffer-abs-l">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10 body-text text-justify">
-		<p><i>Hi there  <i class="fa fa-smile-o socio-icons" aria-hidden="true"></i></i> </p>
-    <p>I am a Research Fellow in the <a
-      href='https://www.microsoft.com/en-us/research/group/machine-learning-and-optimization/'>
-      Machine Learning and Optimization (MLO)</a> group and the <a
-      href="https://www.microsoft.com/en-us/research/project/machine-learning-edge/">
-      Intelligent Devices Expedition (IDE)</a> at Microsoft Research India
-    working on bringing machine learning and intelligence to tiny, edge and end
-      point devices - think devices with few KBs of RAM and bare minimum
-      processing capabilities. I am advised by <a
-      href="http://www.prateekjain.org">Prateek</a> and <a
-    href="http://harsha-simhadri.org">Harsha</a>. </p>
+  
+  <!-- Body text -->
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8 body-text text-justify">
+    <p>I am slated to finish my research fellowship at Microsoft Research in
+    Spring 2019. I work with <a
+     href="http//www.prateekjain.org">Prateek</a> and <a href =
+     "http://harsha-simhadri.org">Harsha</a> in the  <a
+     href="https://www.microsoft.com/en-us/research/group/machine-learning-and-optimization/">
+     Machine Learning and Optimisation (MLO)</a> group and<a href="https://www.microsoft.com/en-us/research/project/machine-learning-edge/">
+     Intelligent Devices Expedition</a> group where I do research on bringing
+    state-of-the-art machine learning to severely resource-constrained
+    devices</p>
 
-    <p > My research focuses on developing and analysing machine learning
-    algorithms that ensures state-of-the art performance in resource
-    constrained environments. I am also interested in understanding the systems
-    aspects of such environments, how ML algorithms and the devices that they
-    work on interact and how such interactions can be made efficient. The
-    <a>GesturePod</a> and <a>WakeWord</a> projects that I am working on
-    currently are specific examples of how novel machine learning ideas with
-    efficient on device implementations can give rise to amazing practical and
-    durable <i>intelligent devices</i>.  The <a>EMI-RNN</a> algorithm (accepted at
-    NIPS '18) we recently developed is an example of a machine learning
-    technique that shines in the resource constrained setting.</p>
-
-    <p>I am one of the first and a core contributor of <a href="http://www.github.com/Microsoft/EdgeML">EdgeML</a>
-		 - our machine learning library for edge devices.  I primarily focus on
-		 developing and maintaining our Tensorflow code base.
-     <p><b>Research Interests</b>
-     <p>My research interests lie at the intersection of machine learning, and
-     its applications and interactions with systems and devices. Broadly, I am
-     interested in the theory and application of ML algorithms that can solve
-     real world problems. I am also interested in getting such algorithms
-     to work on interesting devices.</p>
-
-     <p>Cheers! <i class="fa fa-smile-o socio-icons" aria-hidden="true"></i><br>
-		</p>
-		</div>
-	<div class="col-sm-1"></div>
+    <p>My research follows a bottom-up approach in which I go back to the
+    drawing board to design machine learning algorithms that can achieve
+    state-of-the-art performance while being aware of the resource constraints
+    imposed. For instance,
+    <ul>
+      <li>With my EMI-RNN work (accepted at NIPS '18), we were able to speed-up
+        RNN inference by up to 72x while gaining on performance. This
+        helped bring RNN based real-time keyword spotting to devices like
+        Raspberry Pi0 and MXChip. A demo will be be a part of the MLPCD
+        workshop at NIPS '18.
+      </li>
+      <li>The ProtoNN (prototypes + kNN) based machine learning pipeline I
+        developed for <i>GesturePod</i> (in submission, CHI '19) is able to do
+        robust and accurate real-time gesture recognition on 32kB of RAM and a
+        48MHz processor. GesturePod has been widely covered by the media and
+        will also be a part of the Microsoft booth and MLPCD workshop at NIPS
+        '18.</li>
+    </ul></p>
+    <p><i class="home-small-font"><b>Research Interests</b>: Machine Learning,
+      Resource Efficient Machine Learning, Machine Learning on Devices
+      (Embedded Devices, IoT Devices, Autonomous Systems), Perception.</i></p>
+    <p>Please visit my <a href="/publications">publications</a> and <a href="/projects">projects</a>
+    pages to know more about my work</p>
+    </div>
+  <div class="col-sm-2"></div>
 </div>
-
-
 

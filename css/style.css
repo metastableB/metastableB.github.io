@@ -2,12 +2,12 @@
  * IE Shenanigans.
  */
 body{ 
-  font-size:15px; 
+  font-size:13px; 
 }
 
 .colortheme-navbar {
   background-color: #ffffff;
-    border-color: #f4f0b1;
+  border-color: #f4f0b1;
 }
 
 #colortheme-brand {
@@ -46,6 +46,21 @@ body{
 
 .container-background {
   
+}
+
+.home-qualification {}
+
+.home-contact {
+ color: #999;
+}
+
+.home-contact-a {
+ color: #999;
+ text-decoration: none;
+}
+
+.home-small-font {
+  font-size: 0.8em;
 }
 
 .socio-icons > a {
