@@ -48,9 +48,10 @@ body{
   
 }
 
-.home-research-interests {
-  line-height: 0.9em;
-  color: #999999;
+.home-research-interest-block {
+  color: #999;
+  font-style: italic;
+  font-size: 0.85em;
 }
 
 .home-qualification {}
