@@ -6,8 +6,7 @@ body{
 }
 
 .colortheme-navbar {
-  background-color: #ffffff;
-  border-color: #f4f0b1;
+  border-bottom: 1px solid #f4f0b1;
 }
 
 #colortheme-brand {
@@ -41,7 +40,7 @@ body{
 }
 
 .profile-pic{
-  max-width:200px;
+  max-width:180px;
 }
 
 .container-background {

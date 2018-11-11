@@ -1,29 +1,19 @@
-<nav class="navbar navbar-default colortheme-navbar navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light colortheme-navbar
+      ml-auto">
   <div class="container">
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <!-- Icons, the horizontal bars, in the toggle button -->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-      
-    
-    <!-- the collapse class makes the menue elements collapsed by default in the mobile version -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
-    
-    <!-- Right aligned elements. Elements are by default arranged to the left. Add navbar-right to modify this behaviour -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">Home</a></li> <!-- News and stuff goes here and current home forks into about-->
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/publications/">Publications</a></li>
-        <li><a href="/static/resume_don.pdf">Resume</a></li>
-      </ul>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+      data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/projects/">Projects</a>
+        <a class="nav-item nav-link" href="/publications">Publications</a>
+        <a class="nav-item nav-link" href="/static/resume_don.pdf">Resume</a>
+      </div>
     </div>
-
   </div>
 </nav>
