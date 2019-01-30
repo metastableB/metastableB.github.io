@@ -47,6 +47,16 @@ body{
   
 }
 
+.home-news-date {
+  color: #b77a1c;
+}
+
+.home-news-elem {
+  font-style: italic;
+  font-size: 0.85em;
+  color: #b88a1c;
+}
+
 .home-research-interest-block {
   color: #999;
   font-style: italic;
