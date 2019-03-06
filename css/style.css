@@ -56,6 +56,11 @@ body{
   color: #b88a1c;
 }
 
+.home-news-new {
+  color: #629403;
+  text-shadow: 1px 1px #98ff03;
+}
+
 .home-research-interest-block {
   color: #999;
   font-style: italic;
