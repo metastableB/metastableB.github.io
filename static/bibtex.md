@@ -2,7 +2,7 @@
   Devices</h5>
 
 ```
-@inproceedings{DennisPSJ18,
+@inproceedings{DennisAMSSSJ19,
     author    = {Don Dennis and  Durmus Alp Emre Acar and Vikram Mandikal and
                  Vinu Sankar Sadasivan and  Harsha Vardhan Simhadri and  Venkatesh
                  Saligrama and  Prateek Jain},
@@ -27,5 +27,20 @@
     booktitle = {Proceedings of the Thirty-first Annual Conference on
                  Neural Information Processing Systems (NeurIPS)},
     year      = {2018},
+}
+```
+
+<h5 id='gesturepod'>GesturePod: Enabling On-device Gesture-based Interaction for
+              White Cane Users</h5>
+```
+@inproceedings{Patil19,
+    author = {Patil, Shishir G. and Dennis, Don Kurian and Pabbaraju, Chirag
+              and Shaheer, Nadeem and Simhadri, Harsha Vardhan and Seshadri,
+              Vivek and Varma, Manik and Jain, Prateek},
+ title     = {GesturePod: Enabling On-device Gesture-based Interaction for
+              White Cane Users},
+ booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface
+              Software and Technology},
+ year      = {2019},
 }
 ```
