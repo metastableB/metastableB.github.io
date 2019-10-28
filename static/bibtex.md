@@ -1,3 +1,8 @@
+---
+layout: default
+custom_css: style.css
+permalink: /bibtex/
+---
 <h5 id='sharnn'>Shallow RNN: Accurate Time-series Classification on Resource Constrained
   Devices</h5>
 
