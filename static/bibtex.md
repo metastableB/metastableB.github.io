@@ -1,16 +1,18 @@
 <h4>Shallow RNN: Accurate Time-series Classification on Resource Constrained
   Devices</h4>
 
+```
 @inproceedings{DennisPSJ18,<br>
-&nbsp;&nbsp;author = {Don Dennis and  Durmus Alp Emre Acar and<br>
-  Vikram Mandikal and  Vinu Sankar Sadasivan and  Harsha Vardhan Simhadri<br>
-  and  Venkatesh Saligrama and  Prateek Jain},<br>
-&nbsp;&nbsp;title = {Shallow RNN: Accurate Time-series Classification on<br>
-  Resource Constrained Devices},<br>
-&nbsp;&nbsp;booktitle = {Proceedings of the Thirty-second Annual Conference on<br>
-  Neural Information Processing Systems (NeurIPS)},<br>
-&nbsp;&nbsp;year = {2019},<br>
-}<br>
+  author = {Don Dennis and  Durmus Alp Emre Acar and
+    Vikram Mandikal and  Vinu Sankar Sadasivan and  Harsha Vardhan Simhadri
+    and  Venkatesh Saligrama and  Prateek Jain},
+  title = {Shallow RNN: Accurate Time-series Classification on
+    Resource Constrained Devices},
+  booktitle = {Proceedings of the Thirty-second Annual Conference on
+    Neural Information Processing Systems (NeurIPS)},
+  year = {2019},
+}
+```
 
 
 <h4>Multiple Instance Learning for Efficient Sequential Data
