@@ -34,13 +34,13 @@
               White Cane Users</h5>
 ```
 @inproceedings{Patil19,
-    author = {Patil, Shishir G. and Dennis, Don Kurian and Pabbaraju, Chirag
-              and Shaheer, Nadeem and Simhadri, Harsha Vardhan and Seshadri,
-              Vivek and Varma, Manik and Jain, Prateek},
- title     = {GesturePod: Enabling On-device Gesture-based Interaction for
-              White Cane Users},
- booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface
-              Software and Technology},
- year      = {2019},
+    author    = {Patil, Shishir G. and Dennis, Don Kurian and Pabbaraju, Chirag
+                 and Shaheer, Nadeem and Simhadri, Harsha Vardhan and Seshadri,
+                 Vivek and Varma, Manik and Jain, Prateek},
+    title     = {GesturePod: Enabling On-device Gesture-based Interaction for
+                White Cane Users},
+    booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface
+                 Software and Technology},
+    year      = {2019},
 }
 ```
