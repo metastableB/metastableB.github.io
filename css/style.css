@@ -6,7 +6,7 @@ body{
 }
 
 .colortheme-navbar {
-  border-bottom: 1px solid #f4f0b1;
+  /*border-bottom: 1px solid #f4f0b1;*/
 }
 
 #colortheme-brand {
@@ -76,7 +76,9 @@ body{
   font-size: 0.85em;
 }
 
-.home-qualification {}
+.home-qualification {
+  color: #6e7474;
+}
 
 .home-contact {
  color: #999;
